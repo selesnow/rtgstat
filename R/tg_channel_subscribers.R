@@ -16,19 +16,16 @@ tg_channel_subscribers <- function(
 
   group <- match.arg(group)
 
-  data <- request('https://api.tgstat.ru/channels/subscribers') %>%
-          req_url_query(
-            token     = tg_get_token(),
-            channelId = channel_id,
-            startDate = start_date,
-            endDate   = end_date,
-            group     = group
-          ) %>%
-          req_perform() %>%
-          resp_body_json()
+  resp <- tg_make_request(
+    method    = 'channels/subscribers',
+    token     = tg_get_token(),
+    channelId = channel_id,
+    startDate = as.numeric(as.POSIXct(start_date)),
+    endDate   = as.numeric(as.POSIXct(end_date)),
+    group     = group
+  )
 
-  data <- tibble(res = data$response) %>%
-          unnest_wider('res')
+  res <- tg_parse_response(resp)
 
   return(data)
 

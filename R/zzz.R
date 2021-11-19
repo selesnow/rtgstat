@@ -1,0 +1,65 @@
+.onLtgd <- function(libname, pkgname) {
+
+  # where function
+  utils::globalVariables("where")
+
+  ## adwords developer token
+  if ( Sys.getenv("TG_API_TOKEN") != "" ) {
+
+    tg_api_token <- Sys.getenv("TG_API_TOKEN")
+    cli_alert_info('Set API TOKEN from System Environ')
+
+  } else {
+
+    tg_api_token <- NULL
+
+  }
+
+
+  # options
+  op <- options()
+  op.tg <- list(tg.api_token     = tg_api_token,
+                tg.base_url      = 'https://api.tgstat.ru/',
+                tg.max_tries     = 1,
+                tg.interval      = 10)
+
+  toset <- !(names(op.tg) %in% names(op))
+  if (any(toset)) options(op.tg[toset])
+
+  invisible()
+}
+
+.onAttach <- function(lib, pkg,...){
+
+  packageStartupMessage(rtgstatWelcomeMessage())
+
+}
+
+
+rtgstatWelcomeMessage <- function(){
+  # library(utils)
+
+  paste0("\n",
+         "---------------------\n",
+         "Welcome to rtgstat version ", utils::packageDescription("rtgstat")$Version, "\n",
+         "\n",
+         "Author:           Alexey Seleznev (Head of analytics dept at Netpeak).\n",
+         "Telegram channel: https://t.me/R4marketing \n",
+         "YouTube channel:  https://www.youtube.com/R4marketing/?sub_confirmation=1 \n",
+         "Email:            selesnow@gmail.com\n",
+         "Site:             https://selesnow.github.io \n",
+         "Blog:             https://alexeyseleznev.wordpress.com \n",
+         "Facebook:         https://facebook.com/selesnown \n",
+         "Linkedin:         https://www.linkedin.com/in/selesnow \n",
+         "\n",
+         "Type ?rtgstat for the main documentation.\n",
+         "The github page is: https://github.com/selesnow/rtgstat/\n",
+         "Package site: https://selesnow.github.io/rtgstat/docs\n",
+         "\n",
+         "Suggestions and bug-reports can be submitted at: https://github.com/selesnow/rtgstat/issues\n",
+         "Or contact: <selesnow@gmail.com>\n",
+         "\n",
+         "\tTo suppress this message use:  ", "suppressPackageStartupMessages(library(rtgstat))\n",
+         "---------------------\n"
+  )
+}

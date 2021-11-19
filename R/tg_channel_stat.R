@@ -8,16 +8,13 @@ tg_channel_stat <- function(
   channel_id
 ) {
 
-  data <- request('https://api.tgstat.ru/channels/stat') %>%
-    req_url_query(
-      token     = tg_get_token(),
-      channelId = channel_id
-    ) %>%
-    req_perform() %>%
-    resp_body_json()
+  resp <- tg_make_request(
+    method    = 'channels/stat',
+    token     = tg_get_token(),
+    channelId = channel_id
+  ) %>% tg_set_response_class('to_list')
 
-  data <- tibble(res = list(data$response)) %>%
-          unnest_wider('res')
+  data <- tg_parse_response(resp = resp)
 
   return(data)
 }

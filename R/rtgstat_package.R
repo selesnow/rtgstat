@@ -1,5 +1,5 @@
 #' @import httr2
-#' @import magrittr
 #' @import cli
 #' @import tidyr
+#' @import stringr
 "_PACKAGE"
