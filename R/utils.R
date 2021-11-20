@@ -9,6 +9,7 @@ tg_make_request <- function(method, ...) {
 
 tg_set_response_class <- function(x, class) {
   class(x) <- c(class, class(x))
+  return(x)
 }
 
 # parser

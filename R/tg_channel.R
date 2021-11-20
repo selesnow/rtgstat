@@ -15,13 +15,13 @@ tg_channel <- function(
   channel_id
 ) {
 
-  resp <- tg_make_request(
+  data <- tg_make_request(
     method    = 'channels/get',
     token     = tg_get_token(),
     channelId = channel_id
-  ) %>% tg_set_response_class('to_list')
-
-  data <- tg_parse_response(resp = resp)
+  ) %>%
+    tg_set_response_class('to_list') %>%
+    tg_parse_response()
 
   return(data)
 }

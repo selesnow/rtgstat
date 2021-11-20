@@ -28,7 +28,7 @@ tg_channel_posts <- function(
   hide_deleted = 0
 ) {
 
-  limit     <- 5
+  limit     <- 50
   offset    <- 0
   count     <- 0
   responses <- list()
