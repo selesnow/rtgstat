@@ -1,4 +1,4 @@
-.onLtgd <- function(libname, pkgname) {
+.onLoad <- function(libname, pkgname) {
 
   # where function
   utils::globalVariables("where")
