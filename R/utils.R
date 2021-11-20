@@ -1,6 +1,6 @@
 tg_make_request <- function(method, ...) {
 
-  request(str_glue('https://api.tgstat.ru/{method}')) %>%
+  request(str_glue('{getOption("tg.base_url")}{method}')) %>%
     req_url_query(...) %>%
     req_perform() %>%
     resp_body_json()

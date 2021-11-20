@@ -25,7 +25,7 @@ The method allows you to get a list of mentions of a channel in other channels.
 }
 \details{
 A publication is considered a mention if it contains a link to a channel like username, t.me/username, t.me/username/1234.
-In case of mentioning a channel, the \link{mention_type} parameter will contain the value 'channel'. If a specific publication of the channel is mentioned, then the parameter will contain the value 'post'.
+In case of mentioning a channel, the \code{mention_type} parameter will contain the value 'channel'. If a specific publication of the channel is mentioned, then the parameter will contain the value 'post'.
 }
 \examples{
 \dontrun{

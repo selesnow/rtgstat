@@ -12,7 +12,7 @@
 #' channel <- tg_channel(channel_id = "R4marketing")
 #' }
 tg_channel <- function(
-  channel_id
+  channel_id = tg_get_channel_id()
 ) {
 
   data <- tg_make_request(

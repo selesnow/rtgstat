@@ -10,7 +10,7 @@
 #' channel_stat <- tg_channel_stat(channel_id = "R4marketing")
 #' }
 tg_channel_stat <- function(
-  channel_id
+  channel_id = tg_get_channel_id()
 ) {
 
   resp <- tg_make_request(

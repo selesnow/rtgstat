@@ -30,7 +30,7 @@
 #'  )
 #' }
 tg_channel_subscribers <- function(
-  channel_id,
+  channel_id = tg_get_channel_id(),
   start_date = Sys.Date() - 15,
   end_date = Sys.Date(),
   group = c("day", 'hour', 'week', 'month')

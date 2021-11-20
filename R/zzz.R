@@ -7,11 +7,23 @@
   if ( Sys.getenv("TG_API_TOKEN") != "" ) {
 
     tg_api_token <- Sys.getenv("TG_API_TOKEN")
-    cli_alert_info('Set API TOKEN from System Environ')
+    cli_alert_info('Set API TOKEN from System Environ {.envvar TG_API_TOKEN}')
 
   } else {
 
     tg_api_token <- NULL
+
+  }
+
+  ## adwords developer token
+  if ( Sys.getenv("TG_CHANNEL_ID") != "" ) {
+
+    tg_channel_id <- Sys.getenv("TG_CHANNEL_ID")
+    cli_alert_info('Set CHANNEL ID from System Environ {.envvar TG_CHANNEL_ID}: {.field {tg_channel_id}}')
+
+  } else {
+
+    tg_channel_id <- NULL
 
   }
 
@@ -20,6 +32,7 @@
   op <- options()
   op.tg <- list(tg.api_token     = tg_api_token,
                 tg.base_url      = 'https://api.tgstat.ru/',
+                tg.channel_id    = tg_channel_id,
                 tg.max_tries     = 1,
                 tg.interval      = 10)
 

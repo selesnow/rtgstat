@@ -1,25 +1,21 @@
-#' Getting a list of mentions
-#' @description The method allows you to get a list of mentions of a channel in other channels.
+#' Getting a list of reposts from a channel
+#' @description Allows you to get a list of reposts of publications from a channel to other channels.
 #' @param channel_id Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
-#' @param start_date Date mentioned from
-#' @param end_date Date mentioned to
+#' @param start_date Date forwards from
+#' @param end_date Date forwards to
 #'
-#' @return tibble with mention data
+#' @return tibble with forwards
 #' @export
-#'
-#' @details
-#' A publication is considered a mention if it contains a link to a channel like username, t.me/username, t.me/username/1234.
-#' In case of mentioning a channel, the \code{mention_type} parameter will contain the value 'channel'. If a specific publication of the channel is mentioned, then the parameter will contain the value 'post'.
 #'
 #' @examples
 #' \dontrun{
-#' mentions <- tg_channel_mentions(
+#' forwards <- tg_channel_forwards(
 #'     channel_id = 'R4marketing',
-#'     start_date = '2021-10-01',
-#'     end_date = '2021-10-31'
-#'  )
+#'     start_date = '2021-01-01',
+#'     end_date   = '2021-09-30'
+#' )
 #' }
-tg_channel_mentions <- function(
+tg_channel_forwards <- function(
   channel_id = tg_get_channel_id(),
   start_date = Sys.Date() - 15,
   end_date = Sys.Date()
@@ -35,7 +31,7 @@ tg_channel_mentions <- function(
     iteraction <- iteraction + 1
 
     resp <- tg_make_request(
-      method       = 'channels/mentions',
+      method       = 'channels/forwards',
       token        = tg_get_token(),
       channelId    = channel_id,
       limit        = limit,
@@ -50,7 +46,7 @@ tg_channel_mentions <- function(
       if ( iteraction > 1 ) {
         break
       } else {
-      return(NULL)
+        return(NULL)
       }
     }
 
