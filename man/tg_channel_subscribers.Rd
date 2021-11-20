@@ -26,6 +26,16 @@ tibble with subscribers stat
 \description{
 The method allows you to get the number of channel subscribers in dynamics by hours, days, weeks, months.
 }
+\examples{
+\dontrun{
+channel_subscribers <- tg_channel(
+    channel_id = "R4marketing",
+    start_date = "2021-06-01",
+    end_date = "2021-10-31",
+    group = "month"
+ )
+}
+}
 \references{
 See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/subscribers}
 }

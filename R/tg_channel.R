@@ -7,6 +7,10 @@
 #' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/get}
 #'
 #' @export
+#' @examples
+#' \dontrun{
+#' channel <- tg_channel(channel_id = "R4marketing")
+#' }
 tg_channel <- function(
   channel_id
 ) {

@@ -9,6 +9,15 @@
 #'
 #' @return tibble with subscribers stat
 #' @export
+#' @examples
+#' \dontrun{
+#' channel_subscribers <- tg_channel(
+#'     channel_id = "R4marketing",
+#'     start_date = "2021-06-01",
+#'     end_date = "2021-10-31",
+#'     group = "month"
+#'  )
+#' }
 tg_channel_subscribers <- function(
   channel_id,
   start_date = Sys.Date() - 15,

@@ -5,6 +5,10 @@
 #' @return tibble with channel stat
 #' @references See also \href{https://api.tgstat.ru/docs/ru/channels/stat.html}{TGstat API Documentation of metrod channels/stat}
 #' @export
+#' @examples
+#' \dontrun{
+#' channel_stat <- tg_channel_stat(channel_id = "R4marketing")
+#' }
 tg_channel_stat <- function(
   channel_id
 ) {
