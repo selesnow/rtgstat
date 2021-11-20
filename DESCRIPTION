@@ -16,5 +16,6 @@ RoxygenNote: 7.1.2
 Imports: 
     cli,
     httr2,
+    purrr,
     stringr,
     tidyr

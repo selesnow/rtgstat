@@ -1,6 +1,7 @@
 #' Set API Token of 'TgStat'
 #'
-#' @param token Your API tokem.
+#' @param token Your API token.
+#' @references See also \href{https://api.tgstat.ru/docs/ru/start/token.html}{TGstat API Documentation of Authorization}
 #'
 #' @return Use only for set token. No return value.
 #' @export

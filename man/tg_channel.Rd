@@ -13,5 +13,8 @@ tg_channel(channel_id)
 tibble with channel metadata
 }
 \description{
-Get chennel info
+Get general information about the channel - link to the channel, name, description, avatar, number of subscribers at the moment.
+}
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/get}
 }

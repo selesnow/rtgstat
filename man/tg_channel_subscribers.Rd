@@ -24,5 +24,8 @@ tg_channel_subscribers(
 tibble with subscribers stat
 }
 \description{
-Get channel subscribers nunmber by day
+The method allows you to get the number of channel subscribers in dynamics by hours, days, weeks, months.
+}
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/subscribers}
 }

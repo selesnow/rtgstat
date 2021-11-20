@@ -12,23 +12,23 @@ tg_set_response_class <- function(x, class) {
 }
 
 # parser
-tg_parse_response <- function(resp) {
+tg_parse_response <- function(resp, parse_obj = 'response') {
   UseMethod("tg_parse_response")
 }
 
 
 #' @export
-tg_parse_response.default <- function(resp) {
+tg_parse_response.default <- function(resp, parse_obj = 'response') {
 
-  tibble(res = resp$response) %>%
+  tibble(res = resp[[parse_obj]]) %>%
     unnest_wider('res')
 
 }
 
 #' @export
-tg_parse_response.to_list <- function(resp) {
+tg_parse_response.to_list <- function(resp, parse_obj = 'response') {
 
-  tibble(res = list(resp$response)) %>%
+  tibble(res = list(resp[[parse_obj]])) %>%
     unnest_wider('res')
 
 }

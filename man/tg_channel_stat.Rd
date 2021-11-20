@@ -13,5 +13,8 @@ tg_channel_stat(channel_id)
 tibble with channel stat
 }
 \description{
-Get channel stat
+The method allows you to obtain basic statistics - the number of participants, the average coverage of the publication, the percentage of engagement of subscribers (ERR), the total daily coverage, the citation index (CI)
+}
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/channels/stat.html}{TGstat API Documentation of metrod channels/stat}
 }

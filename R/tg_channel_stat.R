@@ -1,8 +1,9 @@
 #' Get channel stat
-#'
+#' @description The method allows you to obtain basic statistics - the number of participants, the average coverage of the publication, the percentage of engagement of subscribers (ERR), the total daily coverage, the citation index (CI)
 #' @param channel_id Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
 #'
 #' @return tibble with channel stat
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/stat.html}{TGstat API Documentation of metrod channels/stat}
 #' @export
 tg_channel_stat <- function(
   channel_id

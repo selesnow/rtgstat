@@ -1,9 +1,11 @@
 #' Get channel subscribers nunmber by day
-#'
+#' @description The method allows you to get the number of channel subscribers in dynamics by hours, days, weeks, months.
 #' @param channel_id Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
 #' @param start_date Start date of report period
 #' @param end_date End date of report period
 #' @param group Time group: hour, day, week, month
+#'
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/subscribers}
 #'
 #' @return tibble with subscribers stat
 #' @export
@@ -25,7 +27,7 @@ tg_channel_subscribers <- function(
     group     = group
   )
 
-  res <- tg_parse_response(resp)
+  data <- tg_parse_response(resp)
 
   return(data)
 

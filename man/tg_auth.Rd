@@ -7,11 +7,14 @@
 tg_auth(token)
 }
 \arguments{
-\item{token}{Your API tokem.}
+\item{token}{Your API token.}
 }
 \value{
 Use only for set token. No return value.
 }
 \description{
 Set API Token of 'TgStat'
+}
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/start/token.html}{TGstat API Documentation of Authorization}
 }

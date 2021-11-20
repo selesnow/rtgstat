@@ -1,8 +1,11 @@
 #' Get chennel info
-#'
+#' @description  Get general information about the channel - link to the channel, name, description, avatar, number of subscribers at the moment.
 #' @param channel_id hannel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
 #'
 #' @return tibble with channel metadata
+#'
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/get}
+#'
 #' @export
 tg_channel <- function(
   channel_id
