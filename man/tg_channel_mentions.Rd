@@ -36,3 +36,6 @@ mentions <- tg_channel_mentions(
  )
 }
 }
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/channels/mentions.html}{TGstat API Documentation of metrod channels/mentions}
+}

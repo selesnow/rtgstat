@@ -32,3 +32,6 @@ forwards <- tg_channel_forwards(
 )
 }
 }
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/channels/forwards.html}{TGstat API Documentation of metrod channels/forwards}
+}
