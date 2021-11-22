@@ -1,9 +1,15 @@
 tg_make_request <- function(method, ...) {
 
-  request(str_glue('{getOption("tg.base_url")}{method}')) %>%
+  resp <- request(str_glue('{getOption("tg.base_url")}{method}')) %>%
     req_url_query(...) %>%
     req_perform() %>%
     resp_body_json()
+
+  if ( 'error' %in% names(resp) ) {
+    cli_abort(resp$error)
+  }
+
+  return(resp)
 
 }
 

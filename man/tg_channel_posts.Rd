@@ -5,7 +5,7 @@
 \title{Retrieving a list of publications}
 \usage{
 tg_channel_posts(
-  channel_id,
+  channel_id = tg_get_channel_id(),
   start_time = Sys.Date() - 15,
   end_time = Sys.Date(),
   hide_forwards = 0,

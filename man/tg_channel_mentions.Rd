@@ -5,7 +5,7 @@
 \title{Getting a list of mentions}
 \usage{
 tg_channel_mentions(
-  channel_id,
+  channel_id = tg_get_channel_id(),
   start_date = Sys.Date() - 15,
   end_date = Sys.Date()
 )

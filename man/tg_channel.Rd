@@ -4,7 +4,7 @@
 \alias{tg_channel}
 \title{Get chennel info}
 \usage{
-tg_channel(channel_id)
+tg_channel(channel_id = tg_get_channel_id())
 }
 \arguments{
 \item{channel_id}{hannel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')}
