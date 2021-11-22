@@ -1,5 +1,5 @@
 #' Getting the number of views in dynamics
-#'
+#' @details The method allows you to get the total number of views per day on the channel, in dynamics by days, weeks, months.
 #' @param channel_id Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
 #' @param start_date Start date of report period
 #' @param end_date End date of report period

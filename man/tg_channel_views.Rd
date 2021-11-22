@@ -26,6 +26,9 @@ tibble with channel views
 \description{
 Getting the number of views in dynamics
 }
+\details{
+The method allows you to get the total number of views per day on the channel, in dynamics by days, weeks, months.
+}
 \examples{
 \dontrun{
 tg_auth('Your token')
