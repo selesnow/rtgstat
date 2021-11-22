@@ -1,7 +1,7 @@
 #' Getting publication statistics
 #'
-#' @param post_id
-#' @param group
+#' @param post_id Post ID (t.me/username/123, t.me/c/1256804429/1230 or post ID in TGStat)
+#' @param group Grouping results (hour, day)
 #' @details Obtaining publication statistics - the number of views at the moment, the list of reposts and mentions, the dynamics of the growth of views by hours / days.
 #' @return list with tibbles
 #' @export
@@ -34,8 +34,8 @@ tg_post_stat <- function(
   )
 
   views    <- tg_parse_response(resp = responses$response, parse_obj = 'views') %>%
-              mutate(viewsGrowth = as.integer(viewsGrowth))
-              unnest_longer(viewsGrowth, transform = list(as.character) )
+              mutate(viewsGrowth = as.integer(.data$viewsGrowth))
+              unnest_longer('viewsGrowth')
   forwards <- tg_parse_response(resp = responses$response, parse_obj = 'forwards')
   mentions <- tg_parse_response(resp = responses$response, parse_obj = 'mentions')
 

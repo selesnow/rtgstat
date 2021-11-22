@@ -6,6 +6,11 @@
 \usage{
 tg_post_stat(post_id, group = c("day", "hour"))
 }
+\arguments{
+\item{post_id}{Post ID (t.me/username/123, t.me/c/1256804429/1230 or post ID in TGStat)}
+
+\item{group}{Grouping results (hour, day)}
+}
 \value{
 list with tibbles
 }
