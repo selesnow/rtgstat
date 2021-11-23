@@ -47,7 +47,7 @@ devtools::install_github("selesnow/rtgstat")
 
 ## Пример использования
 
-This is a basic example which shows you how to solve a common problem:
+Пример запроса данных из TGstat API:
 
 ``` r
 library(rtgstat)
