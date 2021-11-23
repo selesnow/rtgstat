@@ -76,3 +76,10 @@ mentions   <- mentions_channels$items
 m_channels <- mentions_channels$channels
 ```
 
+## Автор
+Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)
+<Br>Telegram Channel: [R4marketing](https://t.me/R4marketing)
+<Br>email: selesnow@gmail.com
+<Br>facebook: [facebook.com/selesnow](https://www.facebook.com/selesnow)
+<Br>blog: [alexeyseleznev.wordpress.com](https://alexeyseleznev.wordpress.com/)
+
