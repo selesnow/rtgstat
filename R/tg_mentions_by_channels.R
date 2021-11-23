@@ -1,17 +1,18 @@
-#' Search publications
-#' @description Method for searching publications by keyword. Returns publications, sorted in reverse chronological order (most recent from the top), in which the search text was found.
+#' Keyword mentions by channel
+#' @description A method for obtaining data on the mentions of a keyword / phrase grouped by channel. Suitable for tracking channels that often write on a given topic, mention a brand or person in Telegram publications. Returns information about the channel, the number of mentions, reach, and the date of the last mention of the keyword in the channel.
 #' @param query Search query
 #' @param peer_type Source type (channel, chat, all)
 #' @param start_date Published date from (timestamp)
 #' @param end_date Date published to (timestamp)
 #' @param hide_forwards Hide reposts from search results
-#' @param hide_deleted Hide deleted posts
 #' @param strong_search Enable strict search (disables morphology and search by part of a word)
 #' @param minus_mords List of negative words (separator - space)
 #' @param extended_syntax Whether the request uses [extended query syntax](https://api.tgstat.ru/docs/ru/extended-syntax.html), see details
 #'
-#' @return list with two tibbles
+#' @return list
 #' @export
+#'
+#' @references See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGstat API Documentation of metrod words/mentions-by-period}
 #'
 #' @details
 #' Keyword / phrase search methods support extended query syntax. You must pass the extendedSyntax parameter (or extended_syntax in newer API methods) to indicate to the parser that the search query contains statements from the extended query language.
@@ -55,66 +56,48 @@
 #'
 #' @examples
 #' \dontrun{
-#' post_search <- tg_posts_search(
-#'     query = 'rtgstat package',
-#'     peer_type = 'channel',
-#'     start_date = '2021-11-01',
-#'     end_date = '2021-11-31'
+#' mentions_data <- tg_mentions_by_channels(
+#'     query = 'Alexey Seleznev',
+#'     start_date = '2021-09-01',
+#'     end_date = '2021-09-30'
 #' )
 #'
-#' search_result <- post_search$items
-#' channels <- post_search$channels
-#'
+#' mentions <- mentions_data$items
+#' channels <- mentions_data$channels
 #' }
-tg_posts_search <- function(
+tg_mentions_by_channels <- function(
   query,
   peer_type = c('all', 'channel', 'chat'),
   start_date = Sys.Date() - 15,
   end_date = Sys.Date(),
   hide_forwards = 0,
-  hide_deleted = 0,
   strong_search = 0,
   minus_mords = NULL,
   extended_syntax = 0
 ) {
 
-  limit     <- 50
-  offset    <- 0
-  count     <- 0
-  responses <- list()
+  resp <- tg_make_request(
+    method         = 'words/mentions-by-channels',
+    token          = tg_get_token(),
+    q              = query,
+    peerType       = peer_type,
+    startDate      = as.numeric(as.POSIXct(start_date)),
+    endDate        = as.numeric(as.POSIXct(end_date)),
+    hideForwards   = hide_forwards,
+    strongSearch   = strong_search,
+    minusWords     = minus_mords,
+    extendedSyntax = extended_syntax
+  )
 
-  repeat {
+  if ( length(resp$response$items) > 0 ) {
 
-    resp <- tg_make_request(
-      method         = 'posts/search',
-      token          = tg_get_token(),
-      q              = query,
-      peerType       = peer_type,
-      startDate      = as.numeric(as.POSIXct(start_date)),
-      endDate        = as.numeric(as.POSIXct(end_date)),
-      hideForwards   = hide_forwards,
-      hideDeleted    = hide_deleted,
-      strongSearch   = strong_search,
-      minusWords     = minus_mords,
-      extendedSyntax = extended_syntax,
-      extended       = 1,
-      limit          = limit,
-      offset         = offset
-    )
+    items    <- tg_parse_response(resp$response, parse_obj = 'items') %>%
+                mutate(last_mention_date = as.Date(.data$last_mention_date, origin = '1970-01-01'))
+    channels <- tg_parse_response(resp$response, parse_obj = 'channels')
 
-    responses <- append(responses, list(resp$response))
+    res <- list(items = items, channels = channels)
 
-    count <- count + resp$response$count
-
-    if ( count >= resp$response$total_count | count >= 1050 ) break
-
+    return(res)
   }
-
-  items    <- map_dfr(responses, tg_parse_response,  parse_obj = 'items')
-  channels <- map_dfr(responses, tg_parse_response,  parse_obj = 'channels')
-
-  res <- list(items = items, channels = channels)
-
-  return(res)
 
 }

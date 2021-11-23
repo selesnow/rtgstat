@@ -1,17 +1,19 @@
-#' Search publications
-#' @description Method for searching publications by keyword. Returns publications, sorted in reverse chronological order (most recent from the top), in which the search text was found.
+#' Dynamics of the keyword mentions by period
+#' @description A method to track the dynamics of mentions and reach of keywords or phrases. Suitable for monitoring the mention of a brand or person in Telegram publications. Returns the number of mentions and reach of a keyword for each day of the requested period.
 #' @param query Search query
 #' @param peer_type Source type (channel, chat, all)
 #' @param start_date Published date from (timestamp)
 #' @param end_date Date published to (timestamp)
+#' @param group Time group: day, week, month
 #' @param hide_forwards Hide reposts from search results
-#' @param hide_deleted Hide deleted posts
 #' @param strong_search Enable strict search (disables morphology and search by part of a word)
 #' @param minus_mords List of negative words (separator - space)
 #' @param extended_syntax Whether the request uses [extended query syntax](https://api.tgstat.ru/docs/ru/extended-syntax.html), see details
 #'
-#' @return list with two tibbles
+#' @return tibble with mention statistics
 #' @export
+#'
+#' @references See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGstat API Documentation of metrod words/mentions-by-period}
 #'
 #' @details
 #' Keyword / phrase search methods support extended query syntax. You must pass the extendedSyntax parameter (or extended_syntax in newer API methods) to indicate to the parser that the search query contains statements from the extended query language.
@@ -55,65 +57,41 @@
 #'
 #' @examples
 #' \dontrun{
-#' post_search <- tg_posts_search(
-#'     query = 'rtgstat package',
-#'     peer_type = 'channel',
-#'     start_date = '2021-11-01',
-#'     end_date = '2021-11-31'
+#' mentions <- tg_mentions_by_period(
+#'     query = 'Alexey Seleznev',
+#'     start_date = '2021-09-01',
+#'     end_date = '2021-09-30'
 #' )
-#'
-#' search_result <- post_search$items
-#' channels <- post_search$channels
-#'
 #' }
-tg_posts_search <- function(
+tg_mentions_by_period <- function(
   query,
   peer_type = c('all', 'channel', 'chat'),
   start_date = Sys.Date() - 15,
   end_date = Sys.Date(),
+  group = c("day", 'week', 'month'),
   hide_forwards = 0,
-  hide_deleted = 0,
   strong_search = 0,
   minus_mords = NULL,
   extended_syntax = 0
 ) {
 
-  limit     <- 50
-  offset    <- 0
-  count     <- 0
-  responses <- list()
+  group <- match.arg(group)
 
-  repeat {
-
-    resp <- tg_make_request(
-      method         = 'posts/search',
+  resp <- tg_make_request(
+      method         = 'words/mentions-by-period',
       token          = tg_get_token(),
       q              = query,
       peerType       = peer_type,
       startDate      = as.numeric(as.POSIXct(start_date)),
       endDate        = as.numeric(as.POSIXct(end_date)),
+      group          = group,
       hideForwards   = hide_forwards,
-      hideDeleted    = hide_deleted,
       strongSearch   = strong_search,
       minusWords     = minus_mords,
-      extendedSyntax = extended_syntax,
-      extended       = 1,
-      limit          = limit,
-      offset         = offset
-    )
+      extendedSyntax = extended_syntax
+  )
 
-    responses <- append(responses, list(resp$response))
-
-    count <- count + resp$response$count
-
-    if ( count >= resp$response$total_count | count >= 1050 ) break
-
-  }
-
-  items    <- map_dfr(responses, tg_parse_response,  parse_obj = 'items')
-  channels <- map_dfr(responses, tg_parse_response,  parse_obj = 'channels')
-
-  res <- list(items = items, channels = channels)
+  res <- tg_parse_response(resp$response, parse_obj = 'items')
 
   return(res)
 
