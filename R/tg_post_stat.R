@@ -34,7 +34,7 @@ tg_post_stat <- function(
   )
 
   views    <- tg_parse_response(resp = responses$response, parse_obj = 'views') %>%
-              mutate(viewsGrowth = as.integer(.data$viewsGrowth))
+              mutate(viewsGrowth = as.integer(.data$viewsGrowth)) %>%
               unnest_longer('viewsGrowth')
   forwards <- tg_parse_response(resp = responses$response, parse_obj = 'forwards')
   mentions <- tg_parse_response(resp = responses$response, parse_obj = 'mentions')

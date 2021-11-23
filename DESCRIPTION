@@ -1,13 +1,14 @@
 Package: rtgstat
-Title: What the Package Does (One Line, Title Case)
+Title: Client for `TGstat API`
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person(given  = "Alexey",
+           family = "Seleznev",
+           role   = c("aut", "cre"),
+           email  = "selesnow@gmail.com",
+           comment = c(ORCID = "0000-0003-0410-7385"))
+Description: Allow function for usint 'TGstat Stat API' and
+    'TGstat Search API', for more deteils see <https://api.tgstat.ru/docs/ru/start/intro.html>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

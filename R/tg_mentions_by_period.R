@@ -75,7 +75,8 @@ tg_mentions_by_period <- function(
   extended_syntax = 0
 ) {
 
-  group <- match.arg(group)
+  group     <- match.arg(group)
+  peer_type <- match.arg(peer_type)
 
   resp <- tg_make_request(
       method         = 'words/mentions-by-period',

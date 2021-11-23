@@ -76,6 +76,8 @@ tg_mentions_by_channels <- function(
   extended_syntax = 0
 ) {
 
+  peer_type <- match.arg(peer_type)
+
   resp <- tg_make_request(
     method         = 'words/mentions-by-channels',
     token          = tg_get_token(),
@@ -92,7 +94,7 @@ tg_mentions_by_channels <- function(
   if ( length(resp$response$items) > 0 ) {
 
     items    <- tg_parse_response(resp$response, parse_obj = 'items') %>%
-                mutate(last_mention_date = as.Date(.data$last_mention_date, origin = '1970-01-01'))
+                mutate(last_mention_date = as.POSIXct(.data$last_mention_date, origin = '1970-01-01'))
     channels <- tg_parse_response(resp$response, parse_obj = 'channels')
 
     res <- list(items = items, channels = channels)
