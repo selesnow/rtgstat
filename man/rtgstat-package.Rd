@@ -4,11 +4,13 @@
 \name{rtgstat-package}
 \alias{rtgstat}
 \alias{rtgstat-package}
-\title{rtgstat: What the Package Does (One Line, Title Case)}
+\title{rtgstat: Client for `TGstat API`}
 \description{
-What the package does (one paragraph).
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
+Allow function for usint 'TGstat Stat API' and 'TGstat Search API', for more deteils see <https://api.tgstat.ru/docs/ru/start/intro.html>.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Alexey Seleznev \email{selesnow@gmail.com} (\href{https://orcid.org/0000-0003-0410-7385}{ORCID})
 
 }

@@ -19,6 +19,8 @@ Imports:
     dplyr,
     httr2,
     purrr,
+    retry,
     snakecase,
     stringr,
-    tidyr
+    tidyr,
+    utils

@@ -1,7 +1,6 @@
 .onLoad <- function(libname, pkgname) {
 
   # where function
-  utils::globalVariables("where")
 
   ## adwords developer token
   if ( Sys.getenv("TG_API_TOKEN") != "" ) {
