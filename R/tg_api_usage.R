@@ -46,37 +46,30 @@ tg_api_usage <- function(){
 #' @export
 print.tg_api_quote <- function(x, ..., tbl=TRUE) {
 
-  quote_90 <- filter(x,
-                     .data$spent_channels_rate >= 0.9 |
-                     .data$spent_requests_rate >= 0.9 |
-                     .data$spent_words_rate >= 0.9)
+  x_quote_warn <- filter(x,
+                   .data$spent_channels_rate >= getOption('tg.api_quote_alert_rate') |
+                   .data$spent_requests_rate >= getOption('tg.api_quote_alert_rate') |
+                   .data$spent_words_rate    >= getOption('tg.api_quote_alert_rate'))
 
-  if ( nrow(quote_90) > 0 ) {
+  for (sk in x_quote_warn$service_key) {
 
-    for ( sk in quote_90$service_key ) {
+    api_name <- x_quote_warn[x_quote_warn$service_key==sk, "title"]
+    cli_alert_warning(style_bold('{api_name}:'))
 
-      api_name <- quote_90[quote_90$service_key==sk, "title"]
-      cli_alert_warning(style_bold('{api_name}:'))
-      quotes <- c()
+    api_checker_list <- list(
+      x = rep(list(tg_get_api_quote(x_quote_warn, sk)), 3),
+      service_key = rep(sk, 3),
+      quote_type = c('spent_channels_rate', 'spent_requests_rate', 'spent_words_rate')
+    )
 
-      if ( quote_90[quote_90$service_key==sk, 'spent_requests_rate'] > 0.9 ) {
-        quotes <- c(quotes, style_italic(col_br_red('API requests count quota limit has reached over 90%')))
-      }
-
-      if ( quote_90[quote_90$service_key==sk, 'spent_channels_rate'] > 0.9 ) {
-        quotes <- c(quotes, style_italic(col_br_red('API channels count quota limit has reached over 90%')))
-      }
-
-      if ( quote_90[quote_90$service_key==sk, 'spent_words_rate'] > 0.9 ) {
-        quotes <- c(quotes, style_italic(col_br_red('API words count quota limit has reached over 90%')))
-      }
-
-      cli_ul(quotes)
-
-    }
+    pwalk(api_checker_list, tg_quote_printer)
 
   }
 
-  if (tbl) print(as_tibble(x))
+  if (tbl) {
+    x_quote_ok <- x$title[! x$service_key %in% x_quote_warn$service_key]
+    walk(x_quote_ok, ~ cli_alert_success( c(style_bold('{.}:'), ' ', style_italic( col_br_green('All limits reached less then {getOption("tg.api_quote_alert_rate") * 100}%')))) )
+    print(as_tibble(x))
+  }
 
 }

@@ -20,6 +20,18 @@ Getting publication statistics
 \details{
 Obtaining publication statistics - the number of views at the moment, the list of reposts and mentions, the dynamics of the growth of views by hours / days.
 }
+\examples{
+\dontrun{
+post_stat <- tg_post_stat(
+    post_id = 'https://t.me/R4marketing/887',
+    group = 'day'
+)
+
+views <- post_stat$views
+forwards <- post_stat$forwards
+mentions <- post_stat$mentions
+}
+}
 \references{
 See also \href{https://api.tgstat.ru/docs/ru/posts/stat.html}{TGstat API Documentation of metrod posts/stat}
 }

@@ -1,5 +1,7 @@
-# extra export ------------------------------------------------------------
+# extra import ------------------------------------------------------------
 is_response <- getFromNamespace("is_response", "httr2")
+globalVariables(".data")
+globalVariables(".env")
 
 # request -----------------------------------------------------------------
 tg_make_request <- function(method, ..., check_quote = TRUE) {
@@ -56,4 +58,26 @@ tg_parse_response.to_list <- function(resp, parse_obj = 'response') {
   tibble(res = list(resp[[parse_obj]])) %>%
     unnest_wider('res')
 
+}
+
+
+# chek api quote ----------------------------------------------------------
+tg_quote_printer <- function(
+  x,
+  service_key,
+  quote_type
+) {
+
+  fact <- tg_get_api_quote(x, service_key) %>%
+          select(any_of(quote_type)) %>%
+          pull(quote_type)
+
+  if ( fact > getOption('tg.api_quote_alert_rate') ) {
+    cli_ul(style_italic(col_br_red('API {str_replace_all(quote_type, "_", " ")} quota limit has reached over {getOption("tg.api_quote_alert_rate") * 100}%')))
+  }
+
+}
+
+tg_get_api_quote <- function(x, service_key) {
+  filter(x, .data$service_key == .env$service_key)
 }

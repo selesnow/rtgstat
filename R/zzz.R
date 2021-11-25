@@ -1,8 +1,6 @@
 .onLoad <- function(libname, pkgname) {
 
-  # where function
-
-  ## adwords developer token
+  ## tgstat token
   if ( Sys.getenv("TG_API_TOKEN") != "" ) {
 
     tg_api_token <- Sys.getenv("TG_API_TOKEN")
@@ -14,7 +12,7 @@
 
   }
 
-  ## adwords developer token
+  ## default channel
   if ( Sys.getenv("TG_CHANNEL_ID") != "" ) {
 
     tg_channel_id <- Sys.getenv("TG_CHANNEL_ID")
@@ -26,14 +24,14 @@
 
   }
 
-
   # options
   op <- options()
   op.tg <- list(tg.api_token     = tg_api_token,
                 tg.base_url      = 'https://api.tgstat.ru/',
                 tg.channel_id    = tg_channel_id,
                 tg.max_tries     = 1,
-                tg.interval      = 10)
+                tg.interval      = 10,
+                tg.api_quote_alert_rate = 0.9)
 
   toset <- !(names(op.tg) %in% names(op))
   if (any(toset)) options(op.tg[toset])

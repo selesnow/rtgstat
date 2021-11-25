@@ -12,7 +12,7 @@
 #' \dontrun{
 #' post_stat <- tg_post_stat(
 #'     post_id = 'https://t.me/R4marketing/887',
-#'     group = 'day
+#'     group = 'day'
 #' )
 #'
 #' views <- post_stat$views
