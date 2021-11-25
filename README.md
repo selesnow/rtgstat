@@ -4,6 +4,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/selesnow/rtgstat/workflows/R-CMD-check/badge.svg)](https://github.com/selesnow/rtgstat/actions)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/rtgstat)](https://CRAN.R-project.org/package=rtgstat)
 <!-- badges: end -->
 
 Пакет `rtgstat` включает в себя функции для работы со всеми методами [TGstat Search API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search) и [TGstat Stat API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat). 
@@ -34,7 +35,13 @@
 
 ## Устновка
 
-На данный момент пакет `rtgstat` можно устновить из [GitHub](https://github.com/):
+На данный момент пакет `rtgstat` можно устновить из CRAN: 
+
+``` r
+install.packages("rtgstat")
+```
+
+Или [GitHub](https://github.com/):
 
 ``` r
 # install.packages("devtools")
