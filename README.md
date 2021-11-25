@@ -26,7 +26,7 @@
 * `tg_categories()` - [Список категорий **](https://api.tgstat.ru/docs/ru/database/categories.html)
 * `tg_languages()` - [Список языков **](https://api.tgstat.ru/docs/ru/database/languages.html)
 * `tg_countries()` - [Список стран **](https://api.tgstat.ru/docs/ru/database/countries.html)
-* `yg_api_usage()` - [Статистика запросов к API **](https://api.tgstat.ru/docs/ru/usage/stat.html)
+* `tg_api_usage()` - [Статистика запросов к API **](https://api.tgstat.ru/docs/ru/usage/stat.html)
 
 Звёздочкой \* отмечены методы, доступные только на платных тарифах API.
 
