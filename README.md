@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/selesnow/rtgstat/workflows/R-CMD-check/badge.svg)](https://github.com/selesnow/rtgstat/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 Пакет `rtgstat` включает в себя функции для работы со всеми методами TGstat Search API и TGstat Stat API. 
@@ -22,11 +23,13 @@
 * `tg_posts_search()` - [Поиск публикаций *](https://api.tgstat.ru/docs/ru/posts/search.html)
 * `tg_mentions_by_period()` - [Динамика упоминания ключевого слова по периодам *](https://api.tgstat.ru/docs/ru/words/mentions-by-period.html)
 * `tg_mentions_by_channels()` - [Упоминания ключевого слова в разрезе каналов *](https://api.tgstat.ru/docs/ru/words/mentions-by-channels.html)
-* `tg_categories()` - [Список категорий](https://api.tgstat.ru/docs/ru/database/categories.html)
-* `tg_languages()` - [Список языков](https://api.tgstat.ru/docs/ru/database/languages.html)
-* `tg_countries()` - [Список стран](https://api.tgstat.ru/docs/ru/database/countries.html)
+* `tg_categories()` - [Список категорий **](https://api.tgstat.ru/docs/ru/database/categories.html)
+* `tg_languages()` - [Список языков **](https://api.tgstat.ru/docs/ru/database/languages.html)
+* `tg_countries()` - [Список стран **](https://api.tgstat.ru/docs/ru/database/countries.html)
+* `yg_api_usage()` - [Статистика запросов к API **](https://api.tgstat.ru/docs/ru/usage/stat.html)
 
 Звёздочкой \* отмечены методы, доступные только на платных тарифах API.
+Двумя звёздами \*\* отмечаны методы, доступные на всех тарифах и не участвующие в тарификации.
 
 ## Устновка
 
