@@ -6,7 +6,7 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-Пакет `rtgstat` включает в себя функции для работы со всеми методами TGstat Search API и TGstat Stat API. 
+Пакет `rtgstat` включает в себя функции для работы со всеми методами [TGstat Search API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search) и [TGstat Stat API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat). 
 
 На данный момент в `rtgstat` доступны следующие функции, и соответствующие им методы API:
 
