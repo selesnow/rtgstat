@@ -64,3 +64,18 @@ tg_set_interval <- function(
   options(tg.interval = interval)
   cli_alert_info('Set interval: {.field {interval}}')
 }
+
+#' Get rtgstat option values
+#'
+#' @return no return data, using for side effect
+#' @export
+tg_options <- function() {
+
+  tg_opt <- .Options[ grepl("tg\\.", names(.Options) ) ]
+  hidden_set <- c("tg.api_token")
+  tg_opt[hidden_set] <- '<hidden>'
+
+  cli_text(style_bold('rtgstat options:'))
+  walk(names(tg_opt), ~ cli_text(style_bold('{col_blue(.x)}: '), style_italic('{.field {tg_opt[.x]}}')))
+
+}
