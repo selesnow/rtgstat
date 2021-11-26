@@ -9,6 +9,7 @@ Authors@R:
            comment = c(ORCID = "0000-0003-0410-7385"))
 Description: Allow function for using 'TGstat Stat API' and
     'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>.
+    'TGstat' provide telegram channel analytics data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

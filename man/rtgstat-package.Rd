@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Allow function for usint 'TGstat Stat API' and 'TGstat Search API', for more deteils see <https://api.tgstat.ru/docs/ru/start/intro.html>.
+Allow function for using 'TGstat Stat API' and 'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGstat' provide telegran channel analytics data.
 }
 \author{
 \strong{Maintainer}: Alexey Seleznev \email{selesnow@gmail.com} (\href{https://orcid.org/0000-0003-0410-7385}{ORCID})
