@@ -4,11 +4,11 @@
 \name{rtgstat-package}
 \alias{rtgstat}
 \alias{rtgstat-package}
-\title{rtgstat: Client for `TGstat API`}
+\title{rtgstat: Client for 'TGstat API'}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Allow function for using 'TGstat Stat API' and 'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGstat' provide telegran channel analytics data.
+Allow function for using 'TGstat Stat API' and 'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGstat' provide telegram channel analytics data.
 }
 \author{
 \strong{Maintainer}: Alexey Seleznev \email{selesnow@gmail.com} (\href{https://orcid.org/0000-0003-0410-7385}{ORCID})

@@ -1,5 +1,5 @@
 Package: rtgstat
-Title: Client for `TGstat API`
+Title: Client for 'TGstat API'
 Version: 0.1.0
 Authors@R: 
     person(given  = "Alexey",
