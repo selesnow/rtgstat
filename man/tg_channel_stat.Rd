@@ -10,7 +10,7 @@ tg_channel_stat(channel_id = tg_get_channel_id())
 \item{channel_id}{Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')}
 }
 \value{
-tibble with channel stat
+tibble with channel stat ТЕСТ РУССКОГО ЯЗЫКА
 }
 \description{
 The method allows you to obtain basic statistics - the number of participants, the average coverage of the publication, the percentage of engagement of subscribers (ERR), the total daily coverage, the citation index (CI)
