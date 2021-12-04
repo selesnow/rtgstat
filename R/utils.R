@@ -13,6 +13,7 @@ tg_make_request <- function(method, ..., check_quote = TRUE) {
 
   resp <- request(str_glue('{getOption("tg.base_url")}{method}')) %>%
     req_url_query(...) %>%
+    req_user_agent("rtgstat") %>%
     req_retry(
       max_tries    = getOption('tg.max_tries'),
       is_transient = ~ !is_response(.x) && resp_status(.x) != 200,
