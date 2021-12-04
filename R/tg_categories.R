@@ -11,7 +11,8 @@ tg_categories <- function(
   data <- tg_make_request(
     method = 'database/categories',
     token  = tg_get_token(),
-    lang   = lang
+    lang   = lang,
+    check_quote = FALSE
   ) %>%
     tg_parse_response()
 

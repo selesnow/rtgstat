@@ -11,7 +11,8 @@ tg_make_request <- function(method, ..., check_quote = TRUE) {
     print(api_quote, tbl = FALSE)
   }
 
-  resp <- request(str_glue('{getOption("tg.base_url")}{method}')) %>%
+  resp <- request(str_glue('{getOption("tg.base_url")}')) %>%
+    req_url_path_append(method) %>%
     req_url_query(...) %>%
     req_user_agent("rtgstat") %>%
     req_retry(
