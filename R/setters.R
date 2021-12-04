@@ -14,7 +14,7 @@ tg_set_channel_id <- function(
   channel_id
 ) {
   options(tg.channel_id = channel_id)
-  cli_alert_info('Set CHANNEL ID: {.field {tg_channel_id}}')
+  cli_alert_info('Set CHANNEL ID: {.field {channel_id}}')
 }
 
 #' Get defaukt channel ID

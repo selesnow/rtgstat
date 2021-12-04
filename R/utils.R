@@ -11,16 +11,14 @@ tg_make_request <- function(method, ..., check_quote = TRUE) {
     print(api_quote, tbl = FALSE)
   }
 
-  retry(
-    {
-      resp <- request(str_glue('{getOption("tg.base_url")}{method}')) %>%
-        req_url_query(...) %>%
-        req_perform()
-    },
-    until     = ~ is_response(.) && resp_status(.) == 200,
-    interval  = getOption('tg.interval'),
-    max_tries = getOption('tg.max_tries')
-  )
+  resp <- request(str_glue('{getOption("tg.base_url")}{method}')) %>%
+    req_url_query(...) %>%
+    req_retry(
+      max_tries    = getOption('tg.max_tries'),
+      is_transient = ~ !is_response(.x) && resp_status(.x) != 200,
+      after        = getOption('tg.interval')
+    ) %>%
+    req_perform()
 
   resp <- resp_body_json(resp)
 

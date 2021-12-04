@@ -30,7 +30,7 @@
                 tg.base_url   = 'https://api.tgstat.ru/',
                 tg.channel_id = tg_channel_id,
                 tg.max_tries  = 1,
-                tg.interval   = 10,
+                tg.interval   = NULL,
                 tg.api_quote_alert_rate = 0.9)
 
   toset <- !(names(op.tg) %in% names(op))
