@@ -1,5 +1,5 @@
 
-# rtgstat - R пакет для работы с TGstat API<a href='https://cran.r-project.org/package=rtgstat'><img src='man/figures/logo.png' align="right" height="138.5" /></a>
+# rtgstat - R пакет для работы с TGStat API<a href='https://cran.r-project.org/package=rtgstat'><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/selesnow/rtgstat/workflows/R-CMD-check/badge.svg)](https://github.com/selesnow/rtgstat/actions)
@@ -7,7 +7,7 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/rtgstat)](https://CRAN.R-project.org/package=rtgstat)
 <!-- badges: end -->
 
-Пакет `rtgstat` включает в себя функции для работы со всеми методами [TGstat Search API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search) и [TGstat Stat API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat). 
+Пакет `rtgstat` включает в себя функции для работы со всеми методами [TGStat Search API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search) и [TGStat Stat API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat). 
 
 На данный момент в `rtgstat` доступны следующие функции, и соответствующие им методы API:
 
@@ -50,7 +50,7 @@ devtools::install_github("selesnow/rtgstat")
 
 ## Авторизация
 
-Для прохождения авторизации вам необходимо активировать в своём профиле TGstat один из доступных [тарифов](https://api.tgstat.ru/) TGstat API.
+Для прохождения авторизации вам необходимо активировать в своём профиле TGStat один из доступных [тарифов](https://api.tgstat.ru/) TGStat API.
 
 ![Токен доступа к API](http://img.netpeak.ua/alsey/99FBST.png)
 
@@ -58,7 +58,7 @@ devtools::install_github("selesnow/rtgstat")
 
 ## Пример использования
 
-Пример запроса данных из TGstat API:
+Пример запроса данных из TGStat API:
 
 ``` r
 library(rtgstat)

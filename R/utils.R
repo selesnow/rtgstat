@@ -20,16 +20,26 @@ tg_make_request <- function(method, ..., check_quote = TRUE) {
       is_transient = ~ !is_response(.x) && resp_status(.x) != 200,
       after        = getOption('tg.interval')
     ) %>%
-    req_perform()
+    req_perform() %>%
+    resp_body_json()
 
   resp <- resp_body_json(resp)
 
-  if ( 'error' %in% names(resp) ) {
+  if ( resp$status == 'error' ) {
     cli_abort(resp$error)
   }
 
   return(resp)
 
+}
+
+tg_error_body <- function(resp) {
+  resp %>% resp_body_json() %>% .$error
+}
+
+tg_is_error <- function(resp) {
+  resp_stat <- resp %>% resp_body_json() %>% .$status
+  resp_stat == "error"
 }
 
 tg_set_response_class <- function(x, class) {
