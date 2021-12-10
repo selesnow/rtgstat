@@ -33,5 +33,5 @@ mentions <- post_stat$mentions
 }
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/posts/stat.html}{TGstat API Documentation of metrod posts/stat}
+See also \href{https://api.tgstat.ru/docs/ru/posts/stat.html}{TGStat API Documentation of metrod posts/stat}
 }

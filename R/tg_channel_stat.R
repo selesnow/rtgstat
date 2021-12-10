@@ -3,7 +3,7 @@
 #' @param channel_id Channel ID (@username, t.me/username, t.me/joinchat/AAAAABbbbbcccc ... or channel ID in 'TGStat')
 #'
 #' @return tibble with channel stat
-#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/stat.html}{TGstat API Documentation of metrod channels/stat}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/stat.html}{TGStat API Documentation of metrod channels/stat}
 #' @export
 #' @examples
 #' \dontrun{

@@ -13,7 +13,7 @@
 #' @return tibble with mention statistics
 #' @export
 #'
-#' @references See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGstat API Documentation of metrod words/mentions-by-period}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGStat API Documentation of metrod words/mentions-by-period}
 #'
 #' @details
 #' Keyword / phrase search methods support extended query syntax. You must pass the extendedSyntax parameter (or extended_syntax in newer API methods) to indicate to the parser that the search query contains statements from the extended query language.

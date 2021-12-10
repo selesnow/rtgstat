@@ -16,7 +16,7 @@
 #' * week: Y-W
 #' * month: Y-m
 #'
-#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/subscribers}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGStat API Documentation of metrod channels/subscribers}
 #'
 #' @return tibble with subscribers stat
 #' @export

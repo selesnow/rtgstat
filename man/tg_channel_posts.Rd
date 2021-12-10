@@ -40,5 +40,5 @@ posts <- tg_channel_posts(
 
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/channels/posts.html}{TGstat API Documentation of metrod channels/posts}
+See also \href{https://api.tgstat.ru/docs/ru/channels/posts.html}{TGStat API Documentation of metrod channels/posts}
 }

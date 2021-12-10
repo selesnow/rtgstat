@@ -16,5 +16,5 @@ tibble with countries
 List of countries 'TGStat'
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/database/countries.html}{TGstat API Documentation of metrod database/countries}
+See also \href{https://api.tgstat.ru/docs/ru/database/countries.html}{TGStat API Documentation of metrod database/countries}
 }

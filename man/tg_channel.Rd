@@ -21,5 +21,5 @@ channel <- tg_channel(channel_id = "R4marketing")
 }
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/get}
+See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGStat API Documentation of metrod channels/get}
 }

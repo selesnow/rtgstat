@@ -4,7 +4,7 @@
 #'
 #' @return tibble with channel metadata
 #'
-#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/get}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGStat API Documentation of metrod channels/get}
 #'
 #' @export
 #' @examples

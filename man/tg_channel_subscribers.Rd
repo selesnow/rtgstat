@@ -50,5 +50,5 @@ channel_subscribers <- tg_channel_subscribers(
 }
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGstat API Documentation of metrod channels/subscribers}
+See also \href{https://api.tgstat.ru/docs/ru/channels/subscribers.html}{TGStat API Documentation of metrod channels/subscribers}
 }

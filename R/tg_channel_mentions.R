@@ -7,7 +7,7 @@
 #' @return tibble with mention data
 #' @export
 #'
-#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/mentions.html}{TGstat API Documentation of metrod channels/mentions}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/mentions.html}{TGStat API Documentation of metrod channels/mentions}
 #'
 #' @details
 #' A publication is considered a mention if it contains a link to a channel like username, t.me/username, t.me/username/1234.

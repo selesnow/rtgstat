@@ -16,5 +16,5 @@ tibble
 List of available languages for 'TGStat' channels
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/database/languages.html}{TGstat API Documentation of metrod database/languages}
+See also \href{https://api.tgstat.ru/docs/ru/database/languages.html}{TGStat API Documentation of metrod database/languages}
 }

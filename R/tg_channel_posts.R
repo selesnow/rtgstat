@@ -8,7 +8,7 @@
 #' @param hide_deleted Hide deleted posts
 #'
 #' @return tibble with channel posts
-#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/posts.html}{TGstat API Documentation of metrod channels/posts}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/channels/posts.html}{TGStat API Documentation of metrod channels/posts}
 #' @export
 #'
 #' @examples

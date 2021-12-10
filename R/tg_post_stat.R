@@ -6,7 +6,7 @@
 #' @return list with tibbles
 #' @export
 #'
-#' @references See also \href{https://api.tgstat.ru/docs/ru/posts/stat.html}{TGstat API Documentation of metrod posts/stat}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/posts/stat.html}{TGStat API Documentation of metrod posts/stat}
 #'
 #' @examples
 #' \dontrun{

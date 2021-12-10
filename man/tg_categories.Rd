@@ -16,5 +16,5 @@ tibble with categories
 List of 'TGStat' channel categories
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/database/categories.html}{TGstat API Documentation of metrod database/categories}
+See also \href{https://api.tgstat.ru/docs/ru/database/categories.html}{TGStat API Documentation of metrod database/categories}
 }

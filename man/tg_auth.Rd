@@ -16,5 +16,5 @@ Use only for set token. No return value.
 Set API Token of 'TgStat'
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/start/token.html}{TGstat API Documentation of Authorization}
+See also \href{https://api.tgstat.ru/docs/ru/start/token.html}{TGStat API Documentation of Authorization}
 }

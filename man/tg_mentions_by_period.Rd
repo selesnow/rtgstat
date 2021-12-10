@@ -91,5 +91,5 @@ mentions <- tg_mentions_by_period(
 }
 }
 \references{
-See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGstat API Documentation of metrod words/mentions-by-period}
+See also \href{https://api.tgstat.ru/docs/ru/words/mentions-by-period.html}{TGStat API Documentation of metrod words/mentions-by-period}
 }

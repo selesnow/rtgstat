@@ -4,7 +4,7 @@
 #'
 #' @return tibble
 #' @export
-#' @references See also \href{https://api.tgstat.ru/docs/ru/database/languages.html}{TGstat API Documentation of metrod database/languages}
+#' @references See also \href{https://api.tgstat.ru/docs/ru/database/languages.html}{TGStat API Documentation of metrod database/languages}
 tg_languages <- function(
   lang = NULL
 ) {
