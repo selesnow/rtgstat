@@ -2,6 +2,7 @@
 is_response <- getFromNamespace("is_response", "httr2")
 globalVariables(".data")
 globalVariables(".env")
+. <- NULL
 
 # request -----------------------------------------------------------------
 tg_make_request <- function(method, ..., check_quote = TRUE) {
@@ -22,8 +23,6 @@ tg_make_request <- function(method, ..., check_quote = TRUE) {
     ) %>%
     req_perform() %>%
     resp_body_json()
-
-  resp <- resp_body_json(resp)
 
   if ( resp$status == 'error' ) {
     cli_abort(resp$error)

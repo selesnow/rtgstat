@@ -19,6 +19,8 @@
 * `tg_channel_forwards()` - [Получение списка репостов из канала](https://api.tgstat.ru/docs/ru/channels/forwards.html)
 * `tg_channel_subscribers()` - [Получение кол-ва подписчиков в динамике *](https://api.tgstat.ru/docs/ru/channels/subscribers.html)
 * `tg_channel_views()` - [Получение кол-ва просмотров в динамике *](https://api.tgstat.ru/docs/ru/channels/views.html)
+* `tg_channel_avg_posts_reach()` - [Получение среднего охвата публикаций канала в динамике *](https://api.tgstat.ru/docs/ru/channels/avg-posts-reach.html)
+* `tg_channel_err()` - [Получение показателя ERR для канала в динамике *](https://api.tgstat.ru/docs/ru/channels/err.html)
 * `tg_post()` - [Получение данных о публикации](https://api.tgstat.ru/docs/ru/posts/get.html)
 * `tg_post_stat()` - [Получение статистики публикации](https://api.tgstat.ru/docs/ru/posts/stat.html)
 * `tg_posts_search()` - [Поиск публикаций *](https://api.tgstat.ru/docs/ru/posts/search.html)
