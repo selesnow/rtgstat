@@ -2,9 +2,9 @@
 # rtgstat - R пакет для работы с TGStat API<a href='https://cran.r-project.org/package=rtgstat'><img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
-[![](https://cranlogs.r-pkg.org/badges/grand-total/rgoogleads)](https://cran.r-project.org/package=rgoogleads)
-[![](https://cranlogs.r-pkg.org/badges/rgoogleads?color=lightgrey)](https://cran.r-project.org/package=rgoogleads)
-[![](https://cranlogs.r-pkg.org/badges/last-week/rgoogleads?color=lightgrey)](https://cran.r-project.org/package=rgoogleads)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/rtgstat)](https://cran.r-project.org/package=rtgstat)
+[![](https://cranlogs.r-pkg.org/badges/rtgstat?color=lightgrey)](https://cran.r-project.org/package=rtgstat)
+[![](https://cranlogs.r-pkg.org/badges/last-week/rtgstat?color=lightgrey)](https://cran.r-project.org/package=rtgstat)
 [![R-CMD-check](https://github.com/selesnow/rtgstat/workflows/R-CMD-check/badge.svg)](https://github.com/selesnow/rtgstat/actions)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/rtgstat)](https://CRAN.R-project.org/package=rtgstat)
