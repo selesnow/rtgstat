@@ -89,10 +89,20 @@ mentions   <- mentions_channels$items
 m_channels <- mentions_channels$channels
 ```
 
+## Опции пакета
+В пакете доступны следующие опции:
+
+* `tg.api_token` - Позволяет задать API токен в рамках текущей сессии;
+* `tg.channel_id` - Идентификатор канала в рамках сессии;
+* `tg.check_api_quote` - Позволяет отключать проверку квоты API, по умолчанию `TRUE`, для отключения устновите `FALSE`;
+* `tg.api_quote_alert_rate` - Задаёт порог предупреждений об израсходованной квоте API, по умолчанию значение 0.9, т.е. предупреждение будет отображаться если вы израсходовали какую то квоту API более чем на 90%;
+* `tg.max_tries` - Позволяет задать количество повторных отправок запроса, в случае сбоя API;
+* `tg.interval` - Позволяет задать паузу между повторными отправками запросов, по умолчанию пакет сам управляет паузами;
+* `tg.base_url` - Базовый URL обращения к API, крайне не рекомендуется изменять данную опцию.
+
 ## Автор
 Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)
 <Br>Telegram Channel: [R4marketing](https://t.me/R4marketing)
 <Br>email: selesnow@gmail.com
 <Br>facebook: [facebook.com/selesnow](https://www.facebook.com/selesnow)
 <Br>blog: [alexeyseleznev.wordpress.com](https://alexeyseleznev.wordpress.com/)
-
