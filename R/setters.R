@@ -56,13 +56,26 @@ tg_set_max_tries <- function(
 #'
 #' @param interval delay between retries
 #'
-#' @return using for side effect, no returm value
+#' @return using for side effect, no return value
 #' @export
 tg_set_interval <- function(
   interval
 ) {
   options(tg.interval = interval)
   cli_alert_info('Set interval: {.field {interval}}')
+}
+
+#' Disable or enable API limit alert
+#'
+#' @param check_api_quote Logical, disable (or enable) API limit alerts
+#'
+#' @return using for side effect, no return value
+#' @export
+tg_set_check_api_quote <- function(
+  check_api_quote
+) {
+  options(tg.check_api_quote = check_api_quote)
+  cli_alert_info('Set check_api_quote: {.field {check_api_quote}}')
 }
 
 #' Get rtgstat option values

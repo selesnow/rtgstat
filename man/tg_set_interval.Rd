@@ -10,7 +10,7 @@ tg_set_interval(interval)
 \item{interval}{delay between retries}
 }
 \value{
-using for side effect, no returm value
+using for side effect, no return value
 }
 \description{
 Set time interval in seconds between tries of HTTP queries

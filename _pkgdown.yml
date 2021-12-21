@@ -1,0 +1,67 @@
+url: ~
+template:
+  bootstrap: 5
+  params:
+    ganalytics: UA-114798296-1
+  opengraph:
+    image:
+      src: man/figures/logo.png
+      alt: "Loading telegram channel stat from TGStat API"
+
+reference:
+  - title: Main page
+    desc: >
+      rtgstat documentation main page
+    contents:
+      - rtgstat-package
+  - title: Setters
+    desc: >
+      options setters functions
+    contents:
+      - tg_set_channel_id
+      - tg_set_interval
+      - tg_set_max_tries
+      - tg_set_api_quote_alert_rate
+      - tg_set_check_api_quote
+      - tg_options
+  - title: Authorization
+    desc: >
+      Managing authorization process
+    contents:
+      - tg_auth
+  - title: TGStat API Stat
+    desc: >
+      Get statistics
+    contents:
+      - tg_channel
+      - tg_channel_stat
+      - tg_channel_posts
+      - tg_channel_mentions
+      - tg_channel_forwards
+      - tg_channel_subscribers
+      - tg_channel_avg_posts_reach
+      - tg_channel_err
+      - tg_channel_views
+      - tg_post
+      - tg_post_stat
+  - title: TGStat API Search
+    desc: >
+      Search data
+    contents:
+      - tg_posts_search
+      - tg_mentions_by_period
+      - tg_mentions_by_channels
+      - tg_channel
+      - tg_post
+  - title: Dictionary
+    desc: >
+      Dictionary data
+    contents:
+      - tg_categories
+      - tg_languages
+      - tg_countries
+  - title: API limits
+    desc: >
+      Check API limits
+    contents:
+      - tg_api_usage

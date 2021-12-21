@@ -1,5 +1,5 @@
 
-# rtgstat - R пакет для работы с TGStat API<a href='https://cran.r-project.org/package=rtgstat'><img src='man/figures/logo.png' align="right" height="138.5" /></a>
+# rtgstat - R пакет для работы с TGStat API
 
 <!-- badges: start -->
 [![](https://cranlogs.r-pkg.org/badges/grand-total/rtgstat)](https://cran.r-project.org/package=rtgstat)
