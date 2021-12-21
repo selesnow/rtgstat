@@ -9,6 +9,7 @@
 
 ## Bug fixes
 * Fixed bug in `tg_set_channel_id()`: `object 'tg_channel_id' not found`.
+* Fixed API quote parser in `tg_api_usage()`.
 
 ## Other
 * `rtgstat` added to [TGStat API documentation](https://api.tgstat.ru/docs/ru/client-libs.html#%D1%8F%D0%B7%D1%8B%D0%BA-r).
