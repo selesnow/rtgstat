@@ -64,7 +64,7 @@ rtgstatWelcomeMessage <- function(){
          "\n",
          "Type ?rtgstat for the main documentation.\n",
          "The github page is: https://github.com/selesnow/rtgstat/\n",
-         "Package site: https://selesnow.github.io/rtgstat/docs\n",
+         "Package site: https://selesnow.github.io/rtgstat/\n",
          "\n",
          "Suggestions and bug-reports can be submitted at: https://github.com/selesnow/rtgstat/issues\n",
          "Or contact: <selesnow@gmail.com>\n",
