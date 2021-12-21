@@ -111,6 +111,19 @@ tg_set_check_api_quote(FALSE)
 options(tg.check_api_quote = FALSE)
 ```
 
+Посмотреть текущие значения опций `rtgstat` можно с помощью функции `tg_options()`:
+
+```r
+tg_options()
+
+rtgstat options:
+tg.api_token: <hidden>
+tg.base_url: https://api.tgstat.ru/
+tg.max_tries: 1
+tg.check_api_quote: TRUE
+tg.api_quote_alert_rate: 0.9
+```
+
 ## Автор
 Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)
 <Br>Telegram Channel: [R4marketing](https://t.me/R4marketing)

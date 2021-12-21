@@ -64,7 +64,14 @@
         <input type="search" class="form-control me-sm-2" aria-label="Toggle navigation" name="search-input" data-search-index="search.json" id="search-input" placeholder="Search for" autocomplete="off">
 </form>
 
-      <ul class="navbar-nav"></ul>
+      <ul class="navbar-nav">
+<li class="nav-item">
+  <a class="external-link nav-link" href="https://github.com/selesnow/rtgstat/" aria-label="github">
+    <span class="fab fa fab fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 
     
@@ -166,7 +173,7 @@
 </h2>
 <p>Пример запроса данных из TGStat API:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rtgstat</span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://selesnow.github.io/rtgstat" class="external-link">rtgstat</a></span><span class="op">)</span>
 
 <span class="fu"><a href="reference/tg_auth.html">tg_auth</a></span><span class="op">(</span><span class="st">'Ваш токен'</span><span class="op">)</span>
 
@@ -216,6 +223,15 @@
 <code class="sourceCode R"><span class="fu"><a href="reference/tg_set_check_api_quote.html">tg_set_check_api_quote</a></span><span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span>
 <span class="co"># тоже самое что и</span>
 <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>tg.check_api_quote <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+<p>Посмотреть текущие значения опций <code>rtgstat</code> можно с помощью функции <code><a href="reference/tg_options.html">tg_options()</a></code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tg_options</span>()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>rtgstat options<span class="sc">:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>tg.api_token<span class="sc">:</span> <span class="er">&lt;</span>hidden<span class="sc">&gt;</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>tg.base_url<span class="sc">:</span> https<span class="sc">:</span><span class="er">//</span>api.tgstat.ru<span class="sc">/</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>tg.max_tries<span class="sc">:</span> <span class="dv">1</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>tg.check_api_quote<span class="sc">:</span> <span class="cn">TRUE</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>tg.api_quote_alert_rate<span class="sc">:</span> <span class="fl">0.9</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="автор">Автор<a class="anchor" aria-label="anchor" href="#%D0%B0%D0%B2%D1%82%D0%BE%D1%80"></a>
@@ -227,6 +243,8 @@
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://cloud.r-project.org/package=rtgstat" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/selesnow/rtgstat/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/selesnow/rtgstat/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
