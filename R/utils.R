@@ -5,7 +5,7 @@ globalVariables(".env")
 . <- NULL
 
 # request -----------------------------------------------------------------
-tg_make_request <- function(method, ..., check_quote = TRUE) {
+tg_make_request <- function(method, ..., check_quote = getOption('tg.check_api_quote')) {
 
   if ( check_quote ) {
     api_quote <- tg_api_usage()

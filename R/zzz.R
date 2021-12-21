@@ -31,6 +31,7 @@
                 tg.channel_id = tg_channel_id,
                 tg.max_tries  = 1,
                 tg.interval   = NULL,
+                tg.check_api_quote = TRUE,
                 tg.api_quote_alert_rate = 0.9)
 
   toset <- !(names(op.tg) %in% names(op))

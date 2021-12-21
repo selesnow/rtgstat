@@ -4,6 +4,9 @@
 * `tg_channel_avg_posts_reach()` - Getting the average coverage of channel publications over time.
 * `tg_channel_err()` - Obtaining an ERR indicator for a channel in dynamics.
 
+## New options
+* `tg.check_api_quote` - allows you to disable api quota check.
+
 ## Bug fixes
 * Fixed bug in `tg_set_channel_id()`: `object 'tg_channel_id' not found`.
 
