@@ -5,6 +5,8 @@
 #' @return tibble with post data
 #' @export
 #'
+#' @references See also \href{https://api.tgstat.ru/docs/ru/posts/get.html}{TGStat API Documentation of metrod posts/get}
+#'
 #' @examples
 #' \dontrun{
 #' post <- tg_post(

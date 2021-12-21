@@ -65,7 +65,7 @@ devtools::install_github("selesnow/rtgstat")
 
 Пример запроса данных из TGStat API:
 
-``` r
+```r
 library(rtgstat)
 
 tg_auth('Ваш токен')
@@ -103,9 +103,18 @@ m_channels <- mentions_channels$channels
 * `tg.interval` - Позволяет задать паузу между повторными отправками запросов, по умолчанию пакет сам управляет паузами;
 * `tg.base_url` - Базовый URL обращения к API, крайне не рекомендуется изменять данную опцию.
 
+Для установки каждой опции в `rtgstat` есть вспомогательная функция с именем заданным следующим щаблоном `tg_set_имя_опции(значение_опции)`. Т.е. установить любую опцию можно двумя способами:
+
+```r
+tg_set_check_api_quote(FALSE)
+# тоже самое что и
+options(tg.check_api_quote = FALSE)
+```
+
 ## Автор
 Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)
 <Br>Telegram Channel: [R4marketing](https://t.me/R4marketing)
+<Br>YouTube Channel: [R4marketing](https://www.youtube.com/R4marketing/?sub_confirmation=1)
 <Br>email: selesnow@gmail.com
 <Br>facebook: [facebook.com/selesnow](https://www.facebook.com/selesnow)
 <Br>blog: [alexeyseleznev.wordpress.com](https://alexeyseleznev.wordpress.com/)

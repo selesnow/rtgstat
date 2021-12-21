@@ -25,3 +25,6 @@ post <- tg_post(
 )
 }
 }
+\references{
+See also \href{https://api.tgstat.ru/docs/ru/posts/get.html}{TGStat API Documentation of metrod posts/get}
+}
