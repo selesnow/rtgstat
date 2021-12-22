@@ -10,6 +10,17 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/rtgstat)](https://CRAN.R-project.org/package=rtgstat)
 <!-- badges: end -->
 
+## Содержание
+
+* [Функции пакета](#функции-пакета)
+* [Устновка](#установка)
+* [Авторизация](#авторизация)
+* [Пример использования](#пример-использования)
+* [Опции пакета](#опции-пакета)
+* [Переменные среды](#переменные-среды)
+
+## Функции пакета
+
 Пакет `rtgstat` включает в себя функции для работы со всеми методами [TGStat Search API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search) и [TGStat Stat API](https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat). 
 
 На данный момент в `rtgstat` доступны следующие функции, и соответствующие им методы API:
@@ -38,7 +49,7 @@
 
 Двумя звёздами \*\* отмечаны методы, доступные на всех тарифах и не участвующие в тарификации.
 
-## Устновка
+## Установка
 
 На данный момент пакет `rtgstat` можно устновить из CRAN: 
 
@@ -123,6 +134,14 @@ tg.max_tries: 1
 tg.check_api_quote: TRUE
 tg.api_quote_alert_rate: 0.9
 ```
+
+## Переменные среды
+Для удобства работы вы можете использовать переменные среды для установки значений по умолчанию:
+
+* `TG_API_TOKEN` - Ваш токен доступа к TGStat API;
+* `TG_CHANNEL_ID` - Идентификатор основного канала для работы с TGStat API.
+
+Прописать переменные среды можно в файле `.Renviron`, или использовать интерйес операционной системы.
 
 ## Автор
 Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)

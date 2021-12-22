@@ -85,6 +85,21 @@
 </div>
 <!-- badges: start -->
 
+<div class="section level2">
+<h2 id="содержание">Содержание<a class="anchor" aria-label="anchor" href="#%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D0%BD%D0%B8%D0%B5"></a>
+</h2>
+<ul>
+<li><a href="#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0">Функции пакета</a></li>
+<li><a href="#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0">Устновка</a></li>
+<li><a href="#%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Авторизация</a></li>
+<li><a href="#%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Пример использования</a></li>
+<li><a href="#%D0%BE%D0%BF%D1%86%D0%B8%D0%B8-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0">Опции пакета</a></li>
+<li><a href="#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B">Переменные среды</a></li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="функции-пакета">Функции пакета<a class="anchor" aria-label="anchor" href="#%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8-%D0%BF%D0%B0%D0%BA%D0%B5%D1%82%D0%B0"></a>
+</h2>
 <p>Пакет <code>rtgstat</code> включает в себя функции для работы со всеми методами <a href="https://api.tgstat.ru/docs/ru/start/intro.html#api-%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0-api-search" class="external-link">TGStat Search API</a> и <a href="https://api.tgstat.ru/docs/ru/start/intro.html#api-%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8-api-stat" class="external-link">TGStat Stat API</a>.</p>
 <p>На данный момент в <code>rtgstat</code> доступны следующие функции, и соответствующие им методы API:</p>
 <ul>
@@ -148,8 +163,9 @@
 </ul>
 <p>Звёздочкой * отмечены методы, доступные только на платных тарифах API.</p>
 <p>Двумя звёздами ** отмечаны методы, доступные на всех тарифах и не участвующие в тарификации.</p>
+</div>
 <div class="section level2">
-<h2 id="устновка">Устновка<a class="anchor" aria-label="anchor" href="#%D1%83%D1%81%D1%82%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0"></a>
+<h2 id="установка">Установка<a class="anchor" aria-label="anchor" href="#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0"></a>
 </h2>
 <p>На данный момент пакет <code>rtgstat</code> можно устновить из CRAN:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
@@ -232,6 +248,18 @@
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>tg.max_tries<span class="sc">:</span> <span class="dv">1</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>tg.check_api_quote<span class="sc">:</span> <span class="cn">TRUE</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>tg.api_quote_alert_rate<span class="sc">:</span> <span class="fl">0.9</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="переменные-среды">Переменные среды<a class="anchor" aria-label="anchor" href="#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D1%80%D0%B5%D0%B4%D1%8B"></a>
+</h2>
+<p>Для удобства работы вы можете использовать переменные среды для установки значений по умолчанию:</p>
+<ul>
+<li>
+<code>TG_API_TOKEN</code> - Ваш токен доступа к TGStat API;</li>
+<li>
+<code>TG_CHANNEL_ID</code> - Идентификатор основного канала для работы с TGStat API.</li>
+</ul>
+<p>Прописать переменные среды можно в файле <code>.Renviron</code>, или использовать интерйес операционной системы.</p>
 </div>
 <div class="section level2">
 <h2 id="автор">Автор<a class="anchor" aria-label="anchor" href="#%D0%B0%D0%B2%D1%82%D0%BE%D1%80"></a>
