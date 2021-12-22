@@ -1,5 +1,5 @@
 Package: rtgstat
-Title: Client for 'TGstat API'
+Title: Client for 'TGStat API'
 Version: 0.2.0
 Authors@R: 
     person(given   = "Alexey",
@@ -7,9 +7,9 @@ Authors@R:
            role    = c("aut", "cre"),
            email   = "selesnow@gmail.com",
            comment = c(ORCID = "0000-0003-0410-7385"))
-Description: Allow function for using 'TGstat Stat API' and
-    'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>.
-    'TGstat' provide telegram channel analytics data.
+Description: Allow function for using 'TGStat Stat API' and
+    'TGStat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>.
+    'TGStat' provide telegram channel analytics data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
