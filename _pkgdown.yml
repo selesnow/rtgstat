@@ -1,12 +1,31 @@
 url: ~
 template:
   bootstrap: 5
+  bootswatch: superhero
+  theme: arrow-dark
   params:
     ganalytics: UA-114798296-1
   opengraph:
     image:
       src: man/figures/logo.png
       alt: "Loading telegram channel stat from TGStat API"
+
+navbar:
+  structure:
+    left: [intro, reference, articles, tutorials, api_docs, news]
+    right: [telegram, youtube, github]
+  components:
+    api_docs:
+      text: TGStat API Docs
+      href: https://api.tgstat.ru/docs/ru/start/intro.html
+    youtube:
+      icon: fa-youtube
+      href: https://www.youtube.com/R4marketing/?sub_confirmation=1
+      aria-label: YouTube
+    telegram:
+      icon: fa-telegram
+      href: https://t.me/R4marketing
+      aria-label: Telegram
 
 reference:
   - title: Main page
