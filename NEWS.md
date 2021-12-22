@@ -1,3 +1,7 @@
+# rtgstat 0.2.2
+
+* Only CRAN fixes.
+
 # rtgstat 0.2.0
 
 ## New function
