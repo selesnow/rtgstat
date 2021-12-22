@@ -1,4 +1,4 @@
-# rtgstat 0.2.2
+# rtgstat 0.2.1
 
 * Only CRAN fixes.
 

@@ -4,16 +4,16 @@
 \name{rtgstat-package}
 \alias{rtgstat}
 \alias{rtgstat-package}
-\title{rtgstat: Client for 'TGstat API'}
+\title{rtgstat: Client for 'TGStat API'}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Allow function for using 'TGstat Stat API' and 'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGstat' provide telegram channel analytics data.
+Allow function for using 'TGStat Stat API' and 'TGStat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGStat' provide telegram channel analytics data.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://selesnow.github.io/rtgstat}
+  \item \url{https://selesnow.github.io/rtgstat/}
   \item Report bugs at \url{https://github.com/selesnow/rtgstat/issues}
 }
 
