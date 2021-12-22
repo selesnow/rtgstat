@@ -10,6 +10,14 @@
 
 Allow function for using 'TGstat Stat API' and 'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGstat' provide telegram channel analytics data.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://selesnow.github.io/rtgstat}
+  \item Report bugs at \url{https://github.com/selesnow/rtgstat/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Alexey Seleznev \email{selesnow@gmail.com} (\href{https://orcid.org/0000-0003-0410-7385}{ORCID})
 

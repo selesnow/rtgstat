@@ -1,4 +1,4 @@
-# rtgstat (development version)
+# rtgstat 0.2.0
 
 ## New function
 * `tg_channel_avg_posts_reach()` - Getting the average coverage of channel publications over time.

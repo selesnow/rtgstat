@@ -1,11 +1,11 @@
 Package: rtgstat
 Title: Client for 'TGstat API'
-Version: 0.1.1.9000
+Version: 0.2.0
 Authors@R: 
-    person(given  = "Alexey",
-           family = "Seleznev",
-           role   = c("aut", "cre"),
-           email  = "selesnow@gmail.com",
+    person(given   = "Alexey",
+           family  = "Seleznev",
+           role    = c("aut", "cre"),
+           email   = "selesnow@gmail.com",
            comment = c(ORCID = "0000-0003-0410-7385"))
 Description: Allow function for using 'TGstat Stat API' and
     'TGstat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>.
@@ -22,7 +22,6 @@ Imports:
     dplyr,
     httr2,
     purrr,
-    retry,
     snakecase,
     stringr,
     tidyr,
