@@ -1,10 +1,15 @@
+# rtgstat (development version)
+
+## New functions
+* `tg_channels_search()`- Search telegram channel.
+
 # rtgstat 0.2.1
 
 * Only CRAN fixes.
 
 # rtgstat 0.2.0
 
-## New function
+## New functions
 * `tg_channel_avg_posts_reach()` - Getting the average coverage of channel publications over time.
 * `tg_channel_err()` - Obtaining an ERR indicator for a channel in dynamics.
 * `tg_set_check_api_quote()` - Enable and disable API limit rate alerts.

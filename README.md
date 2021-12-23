@@ -27,6 +27,7 @@
 
 * `tg_auth()` - [Авторизация](https://api.tgstat.ru/docs/ru/start/token.html)
 * `tg_channel()` - [Получение информации о канале](https://api.tgstat.ru/docs/ru/channels/get.html)
+* `tg_channels_search()` - [Поиск каналов *](https://api.tgstat.ru/docs/ru/channels/search.html)
 * `tg_channel_stat()` - [Получение статистики канала](https://api.tgstat.ru/docs/ru/channels/stat.html)
 * `tg_channel_posts()` - [Получение списка публикаций канала](https://api.tgstat.ru/docs/ru/channels/posts.html)
 * `tg_channel_mentions()` - [Получение списка упоминаний](https://api.tgstat.ru/docs/ru/channels/mentions.html)
