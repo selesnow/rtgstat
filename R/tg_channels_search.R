@@ -36,7 +36,7 @@ tg_channels_search <- function(
     method                = 'channels/search',
     token                 = tg_get_token(),
     q                     = query,
-    search_by_description = search_by_description,
+    search_by_description = as.integer(search_by_description),
     country               = country,
     language              = language,
     category              = category,
