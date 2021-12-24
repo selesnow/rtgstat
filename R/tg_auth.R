@@ -19,5 +19,10 @@ tg_auth <- function(
 #' @return Api token
 #' @export
 tg_get_token <- function() {
-  Sys.getenv('TG_API_TOKEN')
+  if (!is.null(getOption('tg.api_token'))) {
+    return(getOption('tg.api_token'))
+  }
+  if (identical(Sys.getenv('TG_API_TOKEN'), "")) {
+    cli_abort("API token does't set. Please use tg_auth() for authorization.")
+  }
 }

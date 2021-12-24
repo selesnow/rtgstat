@@ -3,6 +3,9 @@
 ## New functions
 * `tg_channels_search()`- Search telegram channel.
 
+## Other
+* `tg_get_token()` return error when API token doesn't set.
+
 # rtgstat 0.2.1
 
 * Only CRAN fixes.
