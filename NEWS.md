@@ -4,7 +4,7 @@
 * `tg_channels_search()`- Search telegram channel.
 
 ## Bug fixes
-* Fix `tg_get_token()`, previously the function only looked for the token in the options, ignoring the environment variable (#1)
+* Fix `tg_get_token()`, previously the function only looked for the token in the options, ignoring the environment variable [issue#1](https://github.com/selesnow/rtgstat/issues/1)
 
 ## Other
 * `tg_get_token()` return error when API token doesn't set.
