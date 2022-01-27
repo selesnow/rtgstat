@@ -10,6 +10,7 @@ tg_auth <- function(
 ) {
 
   Sys.setenv('TG_API_TOKEN' = token)
+  options(tg.api_token = token)
   cli_alert_success('API token was set success!')
 
 }
@@ -24,5 +25,7 @@ tg_get_token <- function() {
   }
   if (identical(Sys.getenv('TG_API_TOKEN'), "")) {
     cli_abort("API token does't set. Please use tg_auth() for authorization.")
+  } else {
+    return(Sys.getenv('TG_API_TOKEN'))
   }
 }
