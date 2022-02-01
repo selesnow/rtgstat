@@ -1,4 +1,4 @@
-# rtgstat (development version)
+# rtgstat 0.3.0
 
 ## New functions
 * `tg_channels_search()`- Search telegram channel.
