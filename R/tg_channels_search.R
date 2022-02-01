@@ -8,7 +8,7 @@
 #' @param category Channel category. Use \code{\link{tg_categories}} for get categories dictionary.
 #' @param limit Maximum number of channels in a response, no more than 100.
 #'
-#' @return tibble with channelы
+#' @return tibble with channels
 #' @references See also \href{https://api.tgstat.ru/docs/ru/channels/search.html}{TGStat API Documentation of metrod channels/search}
 #' @export
 #'

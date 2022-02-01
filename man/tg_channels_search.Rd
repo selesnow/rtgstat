@@ -27,7 +27,7 @@ tg_channels_search(
 \item{limit}{Maximum number of channels in a response, no more than 100.}
 }
 \value{
-tibble with channelы
+tibble with channels
 }
 \description{
 The method allows you to search for channels by keyword or get a list of channels in a category.
