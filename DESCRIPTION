@@ -1,6 +1,6 @@
 Package: rtgstat
 Title: Client for 'TGStat API'
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: 
     person(given   = "Alexey",
            family  = "Seleznev",
@@ -18,12 +18,12 @@ RoxygenNote: 7.1.2
 URL: https://selesnow.github.io/rtgstat/
 BugReports: https://github.com/selesnow/rtgstat/issues
 Imports: 
-    cli,
-    dplyr,
-    httr2,
+    cli (>= 3.0.0),
+    dplyr (>= 1.0.0),
+    httr2 (>= 0.2.0),
     purrr,
     snakecase,
     stringr,
-    tidyr,
+    tidyr (>= 1.0.0),
     utils
 Language: ru

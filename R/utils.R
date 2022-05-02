@@ -21,12 +21,9 @@ tg_make_request <- function(method, ..., check_quote = getOption('tg.check_api_q
       is_transient = ~ !is_response(.x) && resp_status(.x) != 200,
       after        = getOption('tg.interval')
     ) %>%
+    req_error(is_error = tg_is_error, body = tg_error_body) %>%
     req_perform() %>%
     resp_body_json()
-
-  if ( resp$status == 'error' ) {
-    cli_abort(resp$error)
-  }
 
   return(resp)
 
