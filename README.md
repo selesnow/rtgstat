@@ -145,7 +145,7 @@ tg.api_quote_alert_rate: 0.9
 Прописать переменные среды можно в файле `.Renviron`, или использовать интерйес операционной системы.
 
 ## Автор
-Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net)
+Alexey Seleznev, Head of analytics dept. at [Netpeak](https://netpeak.net/en/us/)
 <Br>Telegram Channel: [R4marketing](https://t.me/R4marketing)
 <Br>YouTube Channel: [R4marketing](https://www.youtube.com/R4marketing/?sub_confirmation=1)
 <Br>email: selesnow@gmail.com
