@@ -1,3 +1,5 @@
+# rtgstat 0.3.2
+
 # rtgstat 0.3.1
 * Update error handing policy in `tg_make_request()`, now using `req_error()` for response error handing.
 * The description lists the minimum required versions of most imported packages.
