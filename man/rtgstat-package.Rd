@@ -6,9 +6,9 @@
 \alias{rtgstat-package}
 \title{rtgstat: Client for 'TGStat API'}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Allow function for using 'TGStat Stat API' and 'TGStat Search API', for more details see <https://api.tgstat.ru/docs/ru/start/intro.html>. 'TGStat' provide telegram channel analytics data.
+Allow function for using 'TGStat Stat API' and 'TGStat Search API', for more details see \url{https://api.tgstat.ru/docs/ru/start/intro.html}. 'TGStat' provide telegram channel analytics data.
 }
 \seealso{
 Useful links:
