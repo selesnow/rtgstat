@@ -1,3 +1,12 @@
+# rtgstat 0.3.3
+* Update default value for `tg.max_tries` options from 1 to 2.
+
+It fixed error:
+```
+Error in `req_retry()`:
+! `max_tries` must be a whole number larger than or equal to 2 or `NULL`, not the number 1.
+```
+
 # rtgstat 0.3.2
 * Rebuild documentation, for cran policy (html5)
 

@@ -2,4 +2,4 @@
 
 0 errors | 0 warnings | 0 note
 
-* * Rebuild documentation, for cran policy (html5)
+* Fix error ! `max_tries` must be a whole number larger than or equal to 2 or `NULL`, not the number 1.

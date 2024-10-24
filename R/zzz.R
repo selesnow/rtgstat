@@ -29,7 +29,7 @@
   op.tg <- list(tg.api_token  = tg_api_token,
                 tg.base_url   = 'https://api.tgstat.ru/',
                 tg.channel_id = tg_channel_id,
-                tg.max_tries  = 1,
+                tg.max_tries  = 2,
                 tg.interval   = NULL,
                 tg.check_api_quote = TRUE,
                 tg.api_quote_alert_rate = 0.9)
