@@ -1,6 +1,6 @@
 Package: rtgstat
 Title: Client for 'TGStat API'
-Version: 0.3.3
+Version: 0.3.4
 Authors@R: 
     person(given   = "Alexey",
            family  = "Seleznev",

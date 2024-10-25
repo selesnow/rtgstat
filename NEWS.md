@@ -1,3 +1,6 @@
+# rtgstat 0.3.4
+* Change link to netpeak site in README.
+
 # rtgstat 0.3.3
 * Update default value for `tg.max_tries` options from 1 to 2.
 
