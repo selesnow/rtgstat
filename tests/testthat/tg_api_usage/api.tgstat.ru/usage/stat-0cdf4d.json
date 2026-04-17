@@ -1,0 +1,93 @@
+{
+    "status": "ok",
+    "response": [
+        {
+            "serviceKey": "api_stat_s",
+            "title": "Доступ к Stat API (тариф S)",
+            "spentChannels": "1/30",
+            "spentRequests": "5/6000",
+            "expiredAt": 1778564534
+        },
+        {
+            "serviceKey": "api_stat_s",
+            "title": "Доступ к Stat API (тариф S)",
+            "spentChannels": "1/30",
+            "spentRequests": "27/6000",
+            "expiredAt": 1770788534
+        },
+        {
+            "serviceKey": "api_stat_s",
+            "title": "Доступ к Stat API (тариф S)",
+            "spentChannels": "1/30",
+            "spentRequests": "30/6000",
+            "expiredAt": 1775972534
+        },
+        {
+            "serviceKey": "api_stat_s",
+            "title": "Доступ к Stat API (тариф S)",
+            "spentChannels": "1/30",
+            "spentRequests": "30/6000",
+            "expiredAt": 1773380534
+        },
+        {
+            "serviceKey": "api_search_s",
+            "title": "Доступ к Search API (тариф S)",
+            "spentWords": "0/50",
+            "spentChannels": "0/30",
+            "spentRequests": "0/12000",
+            "expiredAt": 1773380543
+        },
+        {
+            "serviceKey": "api_search_s",
+            "title": "Доступ к Search API (тариф S)",
+            "spentWords": "0/50",
+            "spentChannels": "0/30",
+            "spentRequests": "0/12000",
+            "expiredAt": 1778564543
+        },
+        {
+            "serviceKey": "api_search_s",
+            "title": "Доступ к Search API (тариф S)",
+            "spentWords": "0/50",
+            "spentChannels": "0/30",
+            "spentRequests": "0/12000",
+            "expiredAt": 1770788543
+        },
+        {
+            "serviceKey": "api_search_s",
+            "title": "Доступ к Search API (тариф S)",
+            "spentWords": "0/50",
+            "spentChannels": "0/30",
+            "spentRequests": "0/12000",
+            "expiredAt": 1775972543
+        },
+        {
+            "serviceKey": "api_callback_start",
+            "title": "Доступ к Callback API (тариф START)",
+            "spentObjects": "0/5",
+            "spentRequests": "0/5000",
+            "expiredAt": 1778564551
+        },
+        {
+            "serviceKey": "api_callback_start",
+            "title": "Доступ к Callback API (тариф START)",
+            "spentObjects": "0/5",
+            "spentRequests": "0/5000",
+            "expiredAt": 1770788551
+        },
+        {
+            "serviceKey": "api_callback_start",
+            "title": "Доступ к Callback API (тариф START)",
+            "spentObjects": "0/5",
+            "spentRequests": "0/5000",
+            "expiredAt": 1775972551
+        },
+        {
+            "serviceKey": "api_callback_start",
+            "title": "Доступ к Callback API (тариф START)",
+            "spentObjects": "0/5",
+            "spentRequests": "0/5000",
+            "expiredAt": 1773380551
+        }
+    ]
+}

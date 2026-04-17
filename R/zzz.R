@@ -4,7 +4,6 @@
   if ( Sys.getenv("TG_API_TOKEN") != "" ) {
 
     tg_api_token <- Sys.getenv("TG_API_TOKEN")
-    cli_alert_info('Set API TOKEN from System Environ {.envvar TG_API_TOKEN}')
 
   } else {
 
@@ -16,7 +15,6 @@
   if ( Sys.getenv("TG_CHANNEL_ID") != "" ) {
 
     tg_channel_id <- Sys.getenv("TG_CHANNEL_ID")
-    cli_alert_info('Set CHANNEL ID from System Environ {.envvar TG_CHANNEL_ID}: {.field {tg_channel_id}}')
 
   } else {
 

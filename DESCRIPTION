@@ -1,6 +1,6 @@
 Package: rtgstat
 Title: Client for 'TGStat API'
-Version: 0.3.4
+Version: 0.3.6
 Authors@R: 
     person(given   = "Alexey",
            family  = "Seleznev",
@@ -14,7 +14,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.2
 URL: https://selesnow.github.io/rtgstat/
 BugReports: https://github.com/selesnow/rtgstat/issues
 Imports: 
@@ -26,4 +26,8 @@ Imports:
     stringr,
     tidyr (>= 1.0.0),
     utils
-Language: ru
+Language: en-US
+Suggests: 
+    httptest2,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

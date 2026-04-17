@@ -1,0 +1,30 @@
+{
+    "status": "ok",
+    "response": {
+        "id": 553388,
+        "tg_id": 1314600216,
+        "link": "t.me/R4marketing",
+        "peer_type": "channel",
+        "username": "@R4marketing",
+        "active_usernames": [
+            "@R4marketing"
+        ],
+        "title": "R4marketing | канал Алексея Селезнёва | Язык R",
+        "about": "Автор канала Алексей Селезнёв, украинский аналитик, автор ряда курсов по языку R и пакетов расширяющих его возможности.\n\nВ канале публикуются статьи, доклады, новости, уроки и заметки по языку R.\n\nДля связи: @AlexeySeleznev\nРеклама: http://bit.ly/39MwJCY",
+        "category": "Технологии",
+        "country": "Украина",
+        "language": "Русский",
+        "image100": "//static8.tgstat.ru/channels/_100/57/5799addd622d308a8c31d8f09ef96a39.jpg",
+        "image640": "//static4.tgstat.ru/channels/_0/57/5799addd622d308a8c31d8f09ef96a39.jpg",
+        "participants_count": 4187,
+        "ci_index": 12.2668,
+        "rkn_verification": {
+            "status": "unknown",
+            "link": null
+        },
+        "tgstat_restrictions": [
+
+        ],
+        "created_at": 1538993073
+    }
+}

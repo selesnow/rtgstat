@@ -1,7 +1,7 @@
 #' @import httr2
 #' @import cli
 #' @importFrom tidyr replace_na separate unnest_longer unnest_wider
-#' @importFrom dplyr across any_of as_tibble filter left_join mutate pull rename_with select tibble
+#' @importFrom dplyr across all_of any_of as_tibble filter left_join mutate pull rename_with select tibble
 #' @importFrom stringr str_glue str_replace_all
 #' @importFrom utils getFromNamespace globalVariables
 #' @importFrom snakecase to_snake_case

@@ -1,0 +1,93 @@
+{
+    "status": "ok",
+    "response": {
+        "count": 5,
+        "items": [
+            {
+                "id": 78442,
+                "tg_id": 1114591086,
+                "link": "t.me/ai_machinelearning_big_data",
+                "peer_type": "channel",
+                "username": "@ai_machinelearning_big_data",
+                "title": "Machinelearning",
+                "about": "Погружаемся в машинное обучение и Data Science\n\nПоказываем  как запускать любые LLm на пальцах. \n\nПо  всем вопросам - @haarrp\n\n@itchannels_telegram -🔥best channels\n\nРеестр РКН: clck.ru/3Fmqri",
+                "image100": "//static10.tgstat.ru/channels/_100/aa/aa0de57bac6ce4f7891c85fd7f4f28fa.jpg",
+                "image640": "//static4.tgstat.ru/channels/_0/aa/aa0de57bac6ce4f7891c85fd7f4f28fa.jpg",
+                "participants_count": 314138,
+                "ci_index": 378.764,
+                "tgstat_restrictions": [
+
+                ],
+                "created_at": 1489565572
+            },
+            {
+                "id": 13194691,
+                "tg_id": 1720833502,
+                "link": "t.me/data_secrets",
+                "peer_type": "channel",
+                "username": "@data_secrets",
+                "title": "Data Secrets",
+                "about": "Главный по машинному обучению\n\nСотрудничество: @veron_28\n\nРКН: clck.ru/3FY3GN",
+                "image100": "//static3.tgstat.ru/channels/_100/00/0056ddf215fc15d3c9096ca2f42b6218.jpg",
+                "image640": "//static8.tgstat.ru/channels/_0/00/0056ddf215fc15d3c9096ca2f42b6218.jpg",
+                "participants_count": 89151,
+                "ci_index": 390.63,
+                "tgstat_restrictions": [
+
+                ],
+                "created_at": 1660620383
+            },
+            {
+                "id": 25075979,
+                "tg_id": 1771819826,
+                "link": "t.me/datais",
+                "peer_type": "channel",
+                "username": "@datais",
+                "title": "Датаис",
+                "about": "Средство не массовой информации. Находим то, что не нашли другие. \n\nПишем о технологиях и маркетинге.\n\nСотрудничество: @erseymo\n\nРКН: https://clck.ru/3FT7CN",
+                "image100": "//static7.tgstat.ru/channels/_100/61/61d2945c22ceaf8fb646b61e583e1f63.jpg",
+                "image640": "//static1.tgstat.ru/channels/_0/61/61d2945c22ceaf8fb646b61e583e1f63.jpg",
+                "participants_count": 68433,
+                "ci_index": 7.03529,
+                "tgstat_restrictions": [
+
+                ],
+                "created_at": 1646487518
+            },
+            {
+                "id": 15140846,
+                "tg_id": 1527878969,
+                "link": "t.me/joinchat/tVowjrt-NTgxODdi",
+                "peer_type": "channel",
+                "username": "",
+                "title": "SQL | Базы данных | Big data",
+                "about": "Заявки принимаются автоматически.\nВсе про базы данных.\nПо всем вопросам: @dimaa_dimaa\nCсылка на канал: https://t.me/+kTZ2CEjZ4WYxMDM6\nРегистрация в РКН: https://vk.cc/cHWFbt\nКанал на бирже: https://telega.in/c/+kTZ2CEjZ4WYxMDM6",
+                "image100": "//static4.tgstat.ru/channels/_100/a5/a5bf6afd9ef5f875e962dfb2fe7767bd.jpg",
+                "image640": "//static5.tgstat.ru/channels/_0/a5/a5bf6afd9ef5f875e962dfb2fe7767bd.jpg",
+                "participants_count": 61141,
+                "ci_index": 69.2197,
+                "tgstat_restrictions": [
+
+                ],
+                "created_at": 1668626256
+            },
+            {
+                "id": 12008986,
+                "tg_id": 1684146975,
+                "link": "t.me/data_analysis_ml",
+                "peer_type": "channel",
+                "username": "@data_analysis_ml",
+                "title": "Анализ данных (Data analysis)",
+                "about": "Data science, наука о данных.  \n\n@haarrp - админ\n\nРКН: clck.ru/3FmyAp",
+                "image100": "//static2.tgstat.ru/channels/_100/95/95162854d37ba9ba09ed8770de38f036.jpg",
+                "image640": "//static9.tgstat.ru/channels/_0/95/95162854d37ba9ba09ed8770de38f036.jpg",
+                "participants_count": 52097,
+                "ci_index": 108.878,
+                "tgstat_restrictions": [
+
+                ],
+                "created_at": 1653752988
+            }
+        ]
+    }
+}

@@ -23,8 +23,8 @@ tg_api_usage <- function(){
       data <-
         separate(data, .data[[col]], into = col_names, sep = '/') %>%
         mutate(
-          across(col_names, as.numeric),
-          across(col_names, replace_na, 0)
+          across(all_of(col_names), as.numeric),
+          across(all_of(col_names), function(x) replace_na(x, 0))
         )
 
     } else {
@@ -41,10 +41,10 @@ tg_api_usage <- function(){
            spent_channels_rate = .data$spent_channels_fact / .data$spent_channels_limit,
            spent_requests_rate = .data$spent_requests_fact / .data$spent_requests_limit,
            spent_words_rate    = .data$spent_words_fact    / .data$spent_words_limit,
-           across(c('spent_channels_rate',
+           across(all_of(c('spent_channels_rate',
                     'spent_requests_rate',
-                    'spent_words_rate'),
-                  replace_na, 0)) %>%
+                    'spent_words_rate')),
+                  function(x) replace_na(x, 0))) %>%
     tg_set_response_class('tg_api_quote')
 
   return(data)

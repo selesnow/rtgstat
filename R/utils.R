@@ -19,7 +19,10 @@ tg_make_request <- function(method, ..., check_quote = getOption('tg.check_api_q
     req_retry(
       max_tries    = getOption('tg.max_tries'),
       is_transient = ~ !is_response(.x) && resp_status(.x) != 200,
-      after        = getOption('tg.interval')
+      after        = function(resp) {
+        interval <- getOption('tg.interval')
+        if (is.null(interval)) 1 else interval
+      }
     ) %>%
     req_error(is_error = tg_is_error, body = tg_error_body) %>%
     req_perform() %>%

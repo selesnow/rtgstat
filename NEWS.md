@@ -1,3 +1,12 @@
+# rtgstat 0.3.6
+* Replaced R 4.1.0 function shorthand syntax `\(x)` with classic `function(x)` in `tg_api_usage()` to maintain compatibility with R versions < 4.1.0 without adding a hard `Depends: R (>= 4.1.0)` requirement. This fixes the CRAN NOTE during the 0.3.5 submission.
+
+# rtgstat 0.3.5
+* Changed `Language: ru` to `Language: en-US` in DESCRIPTION to fix Nu HTML checker warnings reported by CRAN (the documentation is written in English).
+* Added comprehensive unit testing using `httptest2` to mock API responses and preserve rate limits.
+* Fixed an issue with `httr2::req_retry()` compatibility in recent `httr2` versions (parameter `after` now expects a function).
+* Updated `dplyr` syntax in `tg_api_usage()` to comply with recent `dplyr` changes (replaced `across(...)` external vector warnings and deprecated `...` argument).
+
 # rtgstat 0.3.4
 * Change link to netpeak site in README.
 
