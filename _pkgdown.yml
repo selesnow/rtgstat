@@ -38,6 +38,7 @@ reference:
       options setters functions
     contents:
       - tg_set_channel_id
+      - tg_get_channel_id
       - tg_set_interval
       - tg_set_max_tries
       - tg_set_api_quote_alert_rate
@@ -48,6 +49,7 @@ reference:
       Managing authorization process
     contents:
       - tg_auth
+      - tg_get_token
   - title: TGStat API Stat
     desc: >
       Get statistics
@@ -68,6 +70,7 @@ reference:
       Search data
     contents:
       - tg_posts_search
+      - tg_channels_search
       - tg_mentions_by_period
       - tg_mentions_by_channels
       - tg_channel
