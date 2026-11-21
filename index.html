@@ -25,6 +25,14 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-114798296-1');
+</script><!-- canonical: pkgdown сам его не добавляет --><script>
+(function () {
+  if (document.querySelector('link[rel="canonical"]')) return;
+  var l = document.createElement('link');
+  l.rel = 'canonical';
+  l.href = 'https://alexey-seleznev.pro' + location.pathname.replace(/index\.html$/, '');
+  document.head.appendChild(l);
+})();
 </script>
 </head>
 <body>
